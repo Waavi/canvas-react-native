@@ -1,10 +1,7 @@
-/**
- * @format
- * @lint-ignore-every XPLATJSCOPYRIGHT1
- */
+import { AppRegistry } from 'react-native'
+import AppConfig from '@/config'
+import App from '@/App'
+import StorybookUI from '@/storybook'
 
-import {AppRegistry} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
-
-AppRegistry.registerComponent(appName, () => App);
+const MainScreen = __DEV__ && AppConfig.storybook.show ? StorybookUI : App
+AppRegistry.registerComponent(AppConfig.projectName, () => MainScreen)
