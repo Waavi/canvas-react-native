@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "root/*": [
+                "./*"
+            ],
+            "@/*": [
+                "./src/*"
+            ],
+            "@modules/*": [
+                "./modules/*"
+            ],
+            "#actions": [
+                "./src/store/actions"
+            ],
+            "#flags": [
+                "./src/store/global/flags"
+            ],
+            "#propTypes": [
+                "./src/utils/propTypes"
+            ]
+        },
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
