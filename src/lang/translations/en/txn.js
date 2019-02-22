@@ -91,8 +91,8 @@ export default {
 		title: 'COMPARTIR PUNTOS',
 		text1: {
 			one:
-				'Si quieres compartir los puntos de esta transacción tu acompañante tan solo tiene que capturar el siguiente código QR desde su aplicación móvil de welve o directamente desde la propia web.',
-			bold: 'welve',
+				'Si quieres compartir los puntos de esta transacción tu acompañante tan solo tiene que capturar el siguiente código QR desde su aplicación móvil de promed o directamente desde la propia web.',
+			bold: 'promed',
 			two: ' o directamente desde la propia web.',
 		},
 		text2:

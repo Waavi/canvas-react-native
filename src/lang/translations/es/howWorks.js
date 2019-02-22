@@ -3,7 +3,7 @@ export default {
 	slide0: {
 		text: [
 			{ text: 'En ' },
-			{ text: 'welve', bold: true },
+			{ text: 'promed', bold: true },
 			{ text: ' creemos que la fidelidad no se mide en número de ' },
 			{ text: 'likes', italic: true },
 			{
@@ -26,7 +26,7 @@ export default {
 		title: 'Fácil',
 		text: [
 			{ text: 'Con ' },
-			{ text: 'welve', bold: true },
+			{ text: 'promed', bold: true },
 			{
 				text:
 					' olvídate de rellenar interminables formularios por cada nueva tarjeta de fidelización. Activa tantas como quieras desde tu móvil registrándote tan solo una vez. ¡Siempre irán contigo!',
@@ -40,7 +40,7 @@ export default {
 				text:
 					'Tus datos privados serán siempre tuyos. En ningún caso se facilitarán a los comercios adscritos ni a terceros. Toda la comunicación que recibas será a través de nuestro servicio. ',
 			},
-			{ text: 'welve', bold: true },
+			{ text: 'promed', bold: true },
 			{ text: ' es por y para ti.' },
 		],
 	},

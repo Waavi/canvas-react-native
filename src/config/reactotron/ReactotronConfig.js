@@ -6,7 +6,7 @@ import AppConfig from '@/config/app'
 
 // For Android simulation, try run 'adb reverse tcp:9090 tcp:9090' if it doesn't connect to reactotron.
 Reactotron.configure({
-	name: 'WELVE',
+	name: 'PROMED',
 	host: 'localhost',
 })
 	.useReactNative()

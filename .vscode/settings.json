@@ -1,0 +1,17 @@
+{
+	"eslint.packageManager": "yarn",
+
+	"prettier.singleQuote": true,
+	"prettier.eslintIntegration": true,
+	"prettier.tabWidth": 4,
+	"prettier.printWidth": 100,
+
+	"editor.formatOnSave": true,
+	"editor.rulers": [180],
+	"trailing-spaces.trimOnSave": true,
+
+	"javascript.updateImportsOnFileMove.enabled": "always",
+
+	"typescript.format.enable": false,
+	"typescript.check.npmIsInstalled": false
+}

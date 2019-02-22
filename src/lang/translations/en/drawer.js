@@ -7,7 +7,7 @@ export default {
 		CardFinder: 'BUSCADOR',
 		CaptureQR: 'CAPTURAR QR',
 		Account: 'DATOS PERSONALES',
-		HowWorks: 'QUÉ ES WELVE',
+		HowWorks: 'QUÉ ES PROMED',
 		Legal: 'BASES LEGALES',
 		Signout: 'CERRAR SESSIÓN',
 		UIComponents: 'UI Components',
