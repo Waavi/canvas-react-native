@@ -1,9 +1,10 @@
 import React from 'react'
 import { createBottomTabNavigator } from 'react-navigation'
 import { ifIphoneXR } from 'react-native-utils'
-import { InboxScreen, EnquiriesScreen, ArchiveScreen } from '@/screens'
+import { EnquiriesScreen, ArchiveScreen } from '@/screens'
 import { MainTabIcon } from '@/components'
 import { Colors, Metrics } from '@/theme'
+import InboxNavigator from '../inbox'
 
 const tabRoute = (screen, component) => ({
 	screen,
@@ -14,7 +15,7 @@ const tabRoute = (screen, component) => ({
 
 const HomeTab = createBottomTabNavigator(
 	{
-		Inbox: tabRoute(InboxScreen, tintColor => (
+		Inbox: tabRoute(InboxNavigator, tintColor => (
 			<MainTabIcon name="Inbox" tintColor={tintColor} />
 		)),
 		Enquiries: tabRoute(EnquiriesScreen, tintColor => (
@@ -55,6 +56,9 @@ const HomeTab = createBottomTabNavigator(
 			},
 		},
 		headerMode: 'screen',
+		navigationOptions: () => ({
+			header: null,
+		}),
 	}
 )
 
