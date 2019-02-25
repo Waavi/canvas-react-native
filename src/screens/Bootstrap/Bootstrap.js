@@ -3,7 +3,7 @@ import PropTypes from '#propTypes'
 import { ActivityIndicator, StatusBar } from 'react-native'
 import { ScreenView } from '@/components'
 
-export class AuthLoadingScreen extends Component {
+export class BootstrapScreen extends Component {
 	static propTypes = {
 		navigation: PropTypes.navigation.isRequired,
 	}

@@ -1,7 +1,7 @@
 import { put } from 'redux-saga/effects'
 // import { delay } from 'redux-saga'
 // import { StackActions } from 'react-navigation'
-import { SystemActions, NavigationActions, NavigationDataActions } from '../actions'
+import { SystemActions, NavigationActions } from '../actions'
 
 export function* startup() {
 	yield put(SystemActions.rehydratated())
