@@ -14,9 +14,7 @@ const MainStack = createStackNavigator(
 		initialRouteName: 'MyCards',
 		headerMode: 'screen',
 		defaultNavigationOptions: ({ navigation }) => ({
-			header: headerProps => (
-				<NavBar withDrawer navigation={navigation} headerProps={headerProps} />
-			),
+			header: headerProps => <NavBar navigation={navigation} headerProps={headerProps} />,
 		}),
 	}
 )

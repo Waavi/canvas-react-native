@@ -1,14 +1,14 @@
 import { createAppContainer, createSwitchNavigator } from 'react-navigation'
 import { AuthLoadingScreen } from '@/screens'
 import OnboardingStack from './OnboardingStack'
-import MainStackWithDrawer from '../MainStackWithDrawer'
+import MainStack from './MainStack'
 
 const AppSwitchNavigator = createAppContainer(
 	createSwitchNavigator(
 		{
 			AuthLoading: { screen: AuthLoadingScreen },
 			OnboardingStack: { screen: OnboardingStack },
-			MainStack: { screen: MainStackWithDrawer },
+			MainStack: { screen: MainStack },
 		},
 		{
 			initialRouteName: 'AuthLoading',

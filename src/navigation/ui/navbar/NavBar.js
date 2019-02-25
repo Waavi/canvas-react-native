@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import { bool, number, func, array, shape } from 'prop-types'
-import { connect } from 'react-redux'
-import { NavigationDataActions } from '#actions'
 import { findIndex } from 'lodash'
 import { StatusBar, StyleSheet } from 'react-native'
 import { Box, SText } from '@/components'
@@ -10,25 +8,15 @@ import { NavBarIconButton } from './NavBarIconButton'
 
 const minSidesWidth = Metrics.scale.horizontal(14) + 2 * Metrics.grid.baseSpacing
 
-@connect(
-	null,
-	{
-		openDrawer: NavigationDataActions.openDrawer,
-	}
-)
 export class NavBar extends Component {
 	static propTypes = {
 		// Options can be obtained from headerProps or options
 		navigation: shape({ goBack: func.isRequired }).isRequired,
 		headerProps: shape({ scenes: array.isRequired, index: number.isRequired }).isRequired,
 		options: shape({}),
-		withDrawer: bool,
-		openDrawer: func,
 	}
 	static defaultProps = {
 		options: {},
-		withDrawer: false,
-		openDrawer: undefined,
 	}
 	static defaultOptionsData = {
 		title: undefined,
@@ -74,7 +62,6 @@ export class NavBar extends Component {
 	defaultLeftButton = () => {
 		const { headerProps } = this.props
 		if (this.belongsToNavigation) {
-			const { withDrawer, openDrawer } = this.props
 			const index = findIndex(headerProps.scenes, { isActive: true })
 			if (index > 0) {
 				return (
@@ -85,9 +72,6 @@ export class NavBar extends Component {
 						onPress={() => this.goBack()}
 					/>
 				)
-			}
-			if (withDrawer && openDrawer) {
-				return <NavBarIconButton name="nav-bars" size={20} onPress={() => openDrawer()} />
 			}
 		}
 		return null

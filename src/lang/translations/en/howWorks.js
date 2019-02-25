@@ -57,6 +57,5 @@ export default {
 		title: '¿A qué esperas para empezar?',
 	},
 	startBtn: '¡busca tus tarjetas!',
-	drawerOpenBtn: 'salir',
 	swipe: 'desliza para continuar ->',
 }

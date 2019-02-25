@@ -1,7 +1,6 @@
 import general from './general'
 import howWorks from './howWorks'
 import auth from './auth'
-import drawer from './drawer'
 import account from './account'
 import finder from './finder'
 import myCards from './myCards'
@@ -25,7 +24,6 @@ export default {
 	general,
 	howWorks,
 	auth,
-	drawer,
 	account,
 	finder,
 	myCards,

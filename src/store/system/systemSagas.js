@@ -26,7 +26,6 @@ export function* resetToOnboardingStack() {
 	// yield* resetTo({ routeName: 'OnboardingStack' })
 }
 export function* resetToMainStack() {
-	yield put(NavigationDataActions.closeDrawer())
 	yield* navigateTo({ routeName: 'MainStack' })
 	// yield* resetTo({ routeName: 'MainStack' })
 }
