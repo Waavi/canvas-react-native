@@ -45,9 +45,7 @@ export class NavBar extends Component {
 
 	options = () => {
 		const { headerProps, options: optionsProps } = this.props
-		console.tron.log(headerProps)
-		console.tron.log(optionsProps)
-		console.tron.log(this.props.navigation.getParam('handleGoBack'))
+		
 		const optionsData = this.belongsToNavigation
 			? headerProps.scenes[headerProps.index].descriptor.options
 			: optionsProps // TODO: check is OK

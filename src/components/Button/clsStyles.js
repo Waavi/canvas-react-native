@@ -17,7 +17,7 @@ const clsStyles = ClsStyles.create({
 				paddingVertical: Metrics.grid.baseSpacing,
 			},
 			text: {
-				fontSize: Fonts.size.size14,
+				fontSize: Fonts.size[14],
 				fontFamily: Fonts.type.medium,
 				backgroundColor: 'transparent',
 				color: Colors.white,
@@ -51,7 +51,7 @@ const clsStyles = ClsStyles.create({
 				borderWidth: 1,
 				borderColor: Colors.white,
 			},
-			text: { fontSize: Fonts.size.size13 },
+			text: { fontSize: Fonts.size[13] },
 		},
 		yellow: {
 			view: { backgroundColor: Colors.yellow },
@@ -63,7 +63,7 @@ const clsStyles = ClsStyles.create({
 				paddingHorizontal: 1.5 * Metrics.grid.baseSpacing,
 				paddingVertical: 0.5 * Metrics.grid.baseSpacing,
 			},
-			text: { fontSize: Fonts.size.size14 },
+			text: { fontSize: Fonts.size[14] },
 		},
 
 		mini: {
@@ -71,7 +71,7 @@ const clsStyles = ClsStyles.create({
 				paddingHorizontal: 1.5 * Metrics.grid.baseSpacing,
 				paddingVertical: 0.3 * Metrics.grid.baseSpacing,
 			},
-			text: { fontSize: Fonts.size.size14 },
+			text: { fontSize: Fonts.size[14] },
 		},
 
 		center: {

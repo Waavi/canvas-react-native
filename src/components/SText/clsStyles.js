@@ -24,8 +24,8 @@ const clsStyles = ClsStyles.create({
 	styles: {
 		_base: {
 			fontFamily: Fonts.type.regular,
-			fontSize: Fonts.size.size16,
-			lineHeight: lineHeightForSize(Fonts.size.size16),
+			fontSize: Fonts.size[16],
+			lineHeight: lineHeightForSize(Fonts.size[16]),
 			color: Colors.black,
 			backgroundColor: 'transparent',
 		},
