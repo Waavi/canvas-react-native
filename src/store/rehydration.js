@@ -39,7 +39,7 @@ const updateReducers = store => {
 				persistStore(store, null, startup).purge()
 				AsyncStorage.setItem('reducerVersion', reducerVersion)
 			} else {
-				persistStore(store, null, startup).purge()
+				// persistStore(store, null, startup).purge()
 				persistStore(store, null, startup)
 			}
 		})
