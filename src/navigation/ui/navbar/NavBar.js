@@ -46,12 +46,9 @@ export class NavBar extends Component {
 
 	options = () => {
 		const { headerProps, options: optionsProps } = this.props
-		// console.tron.log(headerProps)
-
 		const optionsData = this.belongsToNavigation
 			? headerProps.scenes[headerProps.index].descriptor.options
 			: optionsProps // TODO: check is OK
-		// console.tron.log(optionsData.header())
 		return { ...NavBar.defaultOptionsData, ...optionsData }
 	}
 
@@ -151,8 +148,6 @@ export class NavBar extends Component {
 		)
 	}
 }
-
-console.tron.log(Platform.getStatusBarHeight())
 
 const styles = StyleSheet.create({
 	layout: {
