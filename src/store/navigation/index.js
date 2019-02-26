@@ -19,5 +19,5 @@ export const ReduxifiedAppNavigator = connect(
 	mapStateToProps,
 	null,
 	null,
-	{ withRef: true }
+	{ forwardRef: true }
 )(App)

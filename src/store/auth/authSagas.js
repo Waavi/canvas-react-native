@@ -1,6 +1,5 @@
 // import { Platform } from 'react-native'
-import { delay } from 'redux-saga'
-import { call, select, put, all } from 'redux-saga/effects'
+import { call, select, put, all, delay } from 'redux-saga/effects'
 // import { CLIENT_ERROR } from 'apisauce'
 import {
 	AuthActions,
