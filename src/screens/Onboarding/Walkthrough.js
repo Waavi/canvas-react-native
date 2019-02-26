@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { func, shape } from 'prop-types'
+import { func } from 'prop-types'
 import { connect } from 'react-redux'
 import { AuthActions, GlobalActions } from '#actions'
 import { ScreenView, Button, Icon } from '@/components'

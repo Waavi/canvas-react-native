@@ -5,7 +5,9 @@
 	"scripts": {
 		"start": "node node_modules/react-native/local-cli/cli.js start",
 		"restart": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
-		"test": "jest",
+		"test": "jest --detectOpenHandles",
+		"lint": "./node_modules/.bin/eslint src",
+		"validate": "jest --detectOpenHandles && ./node_modules/.bin/eslint src",
 		"clean": "rm -rf $TMPDIR/react-* && watchman watch-del-all && yarn cache clean",
 		"clear": "rm -rf $TMPDIR/react-* && watchman watch-del-all && rm -rf ios/build/ModuleCache/* && rm -rf android/app/build && rm -rf node_modules/ && yarn cache clean",
 		"watchmant-stop": "watchman watch-del-all",
@@ -46,6 +48,7 @@
 		"prop-types": "^15.6.2",
 		"react": "16.6.3",
 		"react-native": "0.58.5",
+		"react-native-action-sheet": "^2.2.0",
 		"react-native-cli": "^2.0.1",
 		"react-native-gesture-handler": "^1.0.9",
 		"react-native-languages": "^3.0.1",
@@ -62,6 +65,7 @@
 		"redux-form": "^7.4.2",
 		"redux-persist": "^5.10.0",
 		"redux-saga": "^0.16.2",
+		"redux-saga-test-plan": "3.7.0",
 		"reduxsauce": "^1.0.0"
 	},
 	"devDependencies": {
@@ -100,6 +104,12 @@
 		"reactotron-redux-saga": "^2.1.0"
 	},
 	"jest": {
-		"preset": "react-native"
+		"preset": "react-native",
+		"testPathIgnorePatterns": [
+			"<rootDir>/node_modules"
+		],
+		"setupFiles": [
+			"./jest-setup.js"
+		]
 	}
 }

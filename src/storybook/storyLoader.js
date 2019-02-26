@@ -14,7 +14,7 @@ const stories = [
 	'../components/Icon/Icon.stories',
 	'../components/SText/SText.stories',
 ]
-
+// eslint-disable-next-line
 module.exports = {
 	loadStories,
 	stories,

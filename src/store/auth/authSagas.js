@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 // import { Platform } from 'react-native'
 import { delay } from 'redux-saga'
 import { call, select, put, all } from 'redux-saga/effects'
@@ -10,13 +12,13 @@ import {
 	AccountActions,
 	CardsActions,
 } from '#actions'
-// import Analytics from 'app/utils/analytics'
-//import { googleSignout } from 'app/utils/social/googleSocial'
-// import fcm from 'app/utils/fcm'
-// import { setToken, setAuthOnKeychain, removeToken } from 'app/api/apiSecured'
+// import Analytics from '@/utils/analytics'
+//import { googleSignout } from '@/utils/social/googleSocial'
+// import fcm from '@/utils/fcm'
+// import { setToken, setAuthOnKeychain, removeToken } from '@/api/apiSecured'
 import FLAG from '#flags'
 import ERROR from '@/utils/errors'
-// import { fireActionAfterLogin } from 'app/utils/actionsCenter'
+// import { fireActionAfterLogin } from '@/utils/actionsCenter'
 // import { get as getAccount } from './account'
 // import { get as getCategories } from './categories'
 import { resetToMainStack, resetToOnboardingStack, navigateTo } from '@/store/system'

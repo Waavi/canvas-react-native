@@ -1,8 +1,8 @@
 /*
-* The stories are loaded dynamically thanks to 'react-native-storybook-loader'.
-* It loads every '.stories.js' file within 'src' folder (check config within 'package.json')
-* All the stories are loaded within the file 'storybook/storyLoader'.
-* To refresh this file you need to run 'yarn prestorybook'
+The stories are loaded dynamically thanks to 'react-native-storybook-loader'.
+It loads every '.stories.js' file within 'src' folder (check config within 'package.json')
+All the stories are loaded within the file 'storybook/storyLoader'.
+To refresh this file you need to run 'yarn prestorybook'
 */
 import { getStorybookUI, configure } from '@storybook/react-native'
 import './rn-addons'
