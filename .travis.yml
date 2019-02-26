@@ -10,3 +10,21 @@ notifications:
             - alejandro@waavi.com
         on_success: never
         on_failure: always
+
+cache:
+    directories:
+        - node_modules
+
+addons:
+    apt:
+        sources:
+            - ubuntu-toolchain-r-test
+        packages:
+            - g++-4.8
+
+install:
+    - yarn
+
+script:
+    - yarn lint
+    - yarn test
