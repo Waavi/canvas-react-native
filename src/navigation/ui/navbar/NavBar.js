@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { number, func, array, shape } from 'prop-types'
 import { findIndex } from 'lodash'
 import { StatusBar, StyleSheet } from 'react-native'
-import { getStatusBarHeight } from 'react-native-status-bar-height'
+import { Platform } from 'react-native-utils'
 import { Box, SText } from '@/components'
 import { Colors, Metrics } from '@/theme'
 import { NavBarIconButton } from './NavBarIconButton'
@@ -152,10 +152,12 @@ export class NavBar extends Component {
 	}
 }
 
+console.tron.log(Platform.getStatusBarHeight())
+
 const styles = StyleSheet.create({
 	layout: {
 		backgroundColor: Colors.white,
-		paddingTop: getStatusBarHeight(),
+		paddingTop: Platform.getStatusBarHeight(),
 		paddingBottom: 15,
 	},
 	container: {

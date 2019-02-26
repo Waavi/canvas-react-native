@@ -7857,10 +7857,6 @@ react-native-simple-markdown@^1.1.0:
   dependencies:
     react "16.6.3"
 
-react-native-status-bar-height@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/react-native-status-bar-height/-/react-native-status-bar-height-2.2.0.tgz#3bd51de134660efc5f5ad136ca573c7d5790f7ed"
-
 react-native-storybook-loader@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/react-native-storybook-loader/-/react-native-storybook-loader-1.8.0.tgz#35056d62f01019af8692d540fd404a855464d4f3"
