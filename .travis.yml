@@ -26,6 +26,6 @@ install:
     - yarn
 
 script:
-    - yarn refresh-dotenv
+    - scripts/travis.sh
     - yarn lint
     - yarn test
