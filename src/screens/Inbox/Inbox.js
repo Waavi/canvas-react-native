@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import PropTypes from '#propTypes'
 import { connect } from 'react-redux'
 import { AuthActions, GlobalActions } from '#actions'
-import { ScreenView, SText, Button } from '@/components'
+import { ScreenView, Button } from '@/components'
+import { t } from '@/lang'
 
 @connect(
 	null,
@@ -22,9 +23,7 @@ export class InboxScreen extends Component {
 		const { signout, showModalInfo, navigation } = this.props
 		const { navigate } = navigation
 		return (
-			<ScreenView cls="col-center">
-				<SText size={24}>Inbox</SText>
-
+			<ScreenView cls="flex-1 col-center space-around">
 				<Button text="Go to another screen" onPress={() => navigate('OtherScreen')} />
 				<Button text="signout" onPress={signout} />
 
@@ -46,6 +45,6 @@ export class InboxScreen extends Component {
 	}
 }
 
-InboxScreen.navigationOptions = ({ navigation }) => ({
-	title: 'InboxScreen',
+InboxScreen.navigationOptions = () => ({
+	title: t('nav.pages.inbox'),
 })

@@ -3,6 +3,7 @@ import auth from './auth'
 import account from './account'
 import validation from './validation'
 import errors from './errors'
+import nav from './nav'
 
 export default {
 	general,
@@ -10,4 +11,5 @@ export default {
 	account,
 	validation,
 	errors,
+	nav,
 }

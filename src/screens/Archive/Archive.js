@@ -1,8 +1,9 @@
 import React from 'react'
 import { ScreenView, SText } from '@/components'
+import { t } from '@/lang'
 
-ArchiveScreen.navigationOptions = ({ navigation }) => ({
-	title: 'ArchiveScreen',
+ArchiveScreen.navigationOptions = () => ({
+	title: t('nav.pages.archive'),
 })
 export function ArchiveScreen() {
 	return (

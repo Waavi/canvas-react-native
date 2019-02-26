@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { bool, number, func, array, shape } from 'prop-types'
+import { number, func, array, shape } from 'prop-types'
 import { findIndex } from 'lodash'
 import { StatusBar, StyleSheet } from 'react-native'
+import { getStatusBarHeight } from 'react-native-status-bar-height'
 import { Box, SText } from '@/components'
 import { Colors, Metrics } from '@/theme'
 import { NavBarIconButton } from './NavBarIconButton'
@@ -45,12 +46,12 @@ export class NavBar extends Component {
 
 	options = () => {
 		const { headerProps, options: optionsProps } = this.props
-		console.tron.log(headerProps)
-		console.tron.log(optionsProps)
-		console.tron.log(this.props.navigation.getParam('handleGoBack'))
+		// console.tron.log(headerProps)
+
 		const optionsData = this.belongsToNavigation
 			? headerProps.scenes[headerProps.index].descriptor.options
 			: optionsProps // TODO: check is OK
+		// console.tron.log(optionsData.header())
 		return { ...NavBar.defaultOptionsData, ...optionsData }
 	}
 
@@ -134,9 +135,10 @@ export class NavBar extends Component {
 			alignCenter,
 			borderBottomColor,
 		} = this.options()
-		const borderStyle = borderBottomColor
-			? { borderBottomWidth: 2 * StyleSheet.hairlineWidth, borderBottomColor }
-			: {}
+		const borderStyle = {
+			borderBottomWidth: 4 * StyleSheet.hairlineWidth,
+			borderBottomColor: borderBottomColor || Colors.brand,
+		}
 		return (
 			<Box style={[styles.layout, borderStyle]}>
 				<StatusBar barStyle="dark-content" />
@@ -152,8 +154,9 @@ export class NavBar extends Component {
 
 const styles = StyleSheet.create({
 	layout: {
-		backgroundColor: Colors.brand,
-		paddingTop: 75, //Metrics.statusBarHeight,
+		backgroundColor: Colors.white,
+		paddingTop: getStatusBarHeight(),
+		paddingBottom: 15,
 	},
 	container: {
 		backgroundColor: Colors.transparent,
