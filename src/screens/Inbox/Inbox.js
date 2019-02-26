@@ -3,6 +3,7 @@ import PropTypes from '#propTypes'
 import { connect } from 'react-redux'
 import { AuthActions, GlobalActions } from '#actions'
 import { ScreenView, Button } from '@/components'
+import { t } from '@/lang'
 
 @connect(
 	null,
@@ -44,6 +45,6 @@ export class InboxScreen extends Component {
 	}
 }
 
-InboxScreen.navigationOptions = ({ navigation }) => ({
-	title: 'Inbox',
+InboxScreen.navigationOptions = () => ({
+	title: t('nav.pages.inbox'),
 })

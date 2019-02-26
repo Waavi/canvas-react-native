@@ -4,4 +4,9 @@ export default {
 		Enquiries: 'Enquiries',
 		Archive: 'Archive',
 	},
+	pages: {
+		inbox: 'Inbox',
+		enquiries: 'Enquiries',
+		archive: 'Archive',
+	},
 }
