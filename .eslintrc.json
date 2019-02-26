@@ -1,67 +1,53 @@
 {
-    "parser": "babel-eslint",
-    "extends": [
-        "airbnb",
-        "react-native",
-        "plugin:prettier/recommended",
-        "prettier/react"
-    ],
-    "plugins": [
-        "react-native",
-        "prettier"
-    ],
-    "env": {
-        "es6": true,
-        "node": true
-    },
-    "settings": {
-        "import/resolver": {
-            "babel-module": {}
-        }
-    },
-    "globals": {
-        "__DEV__": true
-    },
-    "rules": {
-        "react/jsx-filename-extension": [
-            1,
-            {
-                "extensions": [
-                    ".js",
-                    ".jsx"
-                ]
-            }
-        ],
-        "import/no-extraneous-dependencies": 0,
-        "max-len": [
-            "error",
-            {
-                "code": 100,
-                "ignoreComments": true
-            }
-        ],
-        "indent": [
-            "error",
-            "tab"
-        ],
-        "react/jsx-indent": [
-            "error",
-            "tab"
-        ],
-        "react/jsx-indent-props": [
-            "error",
-            "tab"
-        ],
-        "react/display-name": 0,
-        "no-use-before-define": 0,
-        "no-console": 0,
-        "import/prefer-default-export": 0,
-        "no-invalid-this": 0,
-        "no-inline-comments": 0
-    },
-    "parserOptions": {
-        "ecmaFeatures": {
-            "legacyDecorators": true
-        }
-    }
+	"parser": "babel-eslint",
+	"extends": ["airbnb", "react-native", "plugin:prettier/recommended", "prettier/react"],
+	"plugins": ["react-native", "prettier"],
+	"env": {
+		"es6": true,
+		"node": true
+	},
+	"settings": {
+		"import/resolver": {
+			"babel-module": {}
+		}
+	},
+	"globals": {
+		"__DEV__": true,
+		"alert": true,
+		"process": true,
+		"jest": true,
+		"navigator": true,
+		"describe": true,
+		"it": true
+	},
+	"rules": {
+		"react/jsx-filename-extension": [
+			1,
+			{
+				"extensions": [".js", ".jsx"]
+			}
+		],
+		"import/no-extraneous-dependencies": 0,
+		"max-len": [
+			"error",
+			{
+				"code": 180,
+				"ignoreComments": true
+			}
+		],
+		"indent": ["error", "tab"],
+		"react/jsx-indent": ["error", "tab"],
+		"react/jsx-indent-props": ["error", "tab"],
+		"react/display-name": 0,
+		"no-use-before-define": 0,
+		"no-console": 0,
+		"import/prefer-default-export": 0,
+		"no-invalid-this": 0,
+		"no-inline-comments": 0
+	},
+	"parserOptions": {
+		"ecmaFeatures": {
+			"legacyDecorators": true
+		}
+	}
 }

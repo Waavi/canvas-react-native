@@ -1,0 +1,24 @@
+language: node_js
+
+node_js:
+    - 10
+
+notifications:
+    email:
+        recipients:
+            - adrian@waavi.com
+            - alejandro@waavi.com
+        on_success: never
+        on_failure: always
+
+cache:
+    directories:
+        - node_modules
+
+install:
+    - yarn
+
+script:
+    - scripts/travis.sh
+    - yarn lint
+    - yarn test

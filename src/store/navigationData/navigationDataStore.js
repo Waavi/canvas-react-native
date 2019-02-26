@@ -1,5 +1,4 @@
 import { createReducer, createActions } from 'reduxsauce'
-import { Keyboard } from 'react-native'
 
 // Initial State
 export const initialState = {

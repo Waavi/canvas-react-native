@@ -1,9 +1,10 @@
+/* eslint-disable */
 import React, { PureComponent } from 'react'
 import { bool, string, number, func, element, oneOfType, arrayOf } from 'prop-types'
 import { StyleSheet, TouchableWithoutFeedback } from 'react-native'
-import { Box, SText } from 'app/components'
-import { Metrics } from 'app/theme'
-import { t } from 'app/lang'
+import { Box, SText } from '@/components'
+import { Metrics } from '@/theme'
+import { t } from '@/lang'
 
 export class FormGroup extends PureComponent {
 	static propTypes = {
