@@ -17,6 +17,7 @@ PropTypes.propTypes = {
 PropTypes.defaultProps = {
 	cls: undefined,
 }
+// eslint-disable-next-line
 export function STextArray({ cls, texts, children, ...restProps }) {
 	return <Text {...restProps}>{texts.map((item, index) => textItem(cls, item, index))}</Text>
 }

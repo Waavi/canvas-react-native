@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import Reactotron, { trackGlobalErrors } from 'reactotron-react-native'
+import Reactotron, { trackGlobalErrors } from 'reactotron-react-native' // eslint-disable-line global-require
 import { reactotronRedux } from 'reactotron-redux'
 import sagaPlugin from 'reactotron-redux-saga'
 import AppConfig from '@/config/app'
@@ -18,7 +18,7 @@ Reactotron.configure({
 		})
 	)
 
-if (AppConfig.useReactotron) {
+if (AppConfig.useReactotron && process.env.NODE_ENV !== 'test') {
 	Reactotron.connect().clear()
 }
 

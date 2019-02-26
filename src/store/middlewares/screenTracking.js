@@ -1,5 +1,5 @@
 import { NavigationActions, StackActions } from 'react-navigation'
-//import Analytics from 'app/utils/analytics'
+//import Analytics from '@/utils/analytics'
 import { NavigationDataActions } from '#actions'
 
 const navigateActionTypes = [

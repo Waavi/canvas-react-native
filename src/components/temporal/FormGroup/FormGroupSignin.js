@@ -1,8 +1,9 @@
+/* eslint-disable */
 import React, { PureComponent } from 'react'
-import { string, number, func, element, oneOfType, arrayOf } from 'prop-types'
+import { string, func, element, oneOfType, arrayOf } from 'prop-types'
 import { View, TouchableWithoutFeedback, StyleSheet } from 'react-native'
-import { Box, Icon, SText } from 'app/components'
-import { Metrics, Colors } from 'app/theme'
+import { Box, Icon, SText } from '@/components'
+import { Colors } from '@/theme'
 
 export class FormGroupSignin extends PureComponent {
 	static propTypes = {

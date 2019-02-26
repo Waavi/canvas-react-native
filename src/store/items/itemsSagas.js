@@ -1,8 +1,8 @@
 import { call, put, select } from 'redux-saga/effects'
-// import GlobalActions from 'app/store/redux/global'
+// import GlobalActions from '@/store/redux/global'
 import { ItemsActions } from '#actions'
 //import { changePasswordOnKeychain } from '@/api/apiSecured';
-//import Analytics from 'app/utils/analytics'
+//import Analytics from '@/utils/analytics'
 import Pagination from '@/api/utils/pagination'
 // import ERROR from '@/utils/errors'
 

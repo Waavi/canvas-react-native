@@ -1,7 +1,8 @@
+/* eslint-disable */
 import React, { PureComponent } from 'react'
 import { array, func, object, any } from 'prop-types'
 import { FlatList } from 'react-native'
-import { Box, Loading, RefreshControl, InfiniteLoading } from 'app/components'
+import { Box, Loading, RefreshControl, InfiniteLoading } from '@/components'
 
 export class FlatListPagination extends PureComponent {
 	static propTypes = {
