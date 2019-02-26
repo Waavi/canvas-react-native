@@ -20,4 +20,5 @@ install:
 
 script:
     - scripts/travis.sh
-    - yarn validate
+    - yarn lint
+    - yarn test
