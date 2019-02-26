@@ -7823,6 +7823,12 @@ react-native-simple-markdown@^1.1.0:
     lodash "^4.15.0"
     simple-markdown "git://github.com/CharlesMangwa/simple-markdown.git"
 
+"react-native-skeleton@https://github.com/Waavi/react-native-skeleton.git":
+  version "0.1.0"
+  resolved "https://github.com/Waavi/react-native-skeleton.git#2dd11815d5004bade43f92a2daadd6f6b7f81901"
+  dependencies:
+    react "16.6.3"
+
 react-native-status-bar-height@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/react-native-status-bar-height/-/react-native-status-bar-height-2.2.0.tgz#3bd51de134660efc5f5ad136ca573c7d5790f7ed"
