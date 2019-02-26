@@ -1,4 +1,5 @@
-import { screen, ifIOS, getStatusBarHeight, getBottomSpace } from '@modules/platform'
+import { screen, ifIOS, getBottomSpace } from '@modules/platform'
+import { Platform } from 'react-native-utils'
 
 const { width, height } = screen
 
@@ -32,8 +33,8 @@ export const Metrics = {
 	},
 	screenWidth: width < height ? width : height,
 	screenHeight: width < height ? height : width,
-	statusBarHeight: getStatusBarHeight(false),
-	statusBarSafeHeight: getStatusBarHeight(true),
+	statusBarHeight: Platform.getStatusBarHeight(false),
+	statusBarSafeHeight: Platform.getStatusBarHeight(true),
 	navBarHeight: ifIOS(44, 54),
 	bottomSpace: getBottomSpace,
 }
