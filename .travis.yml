@@ -26,5 +26,6 @@ install:
     - yarn
 
 script:
+    - yarn refresh-dotenv
     - yarn lint
     - yarn test
