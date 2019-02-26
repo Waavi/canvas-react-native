@@ -7851,9 +7851,9 @@ react-native-simple-markdown@^1.1.0:
     lodash "^4.15.0"
     simple-markdown "git://github.com/CharlesMangwa/simple-markdown.git"
 
-react-native-skeleton@Waavi/react-native-skeleton:
+react-native-skeleton@waavi/react-native-skeleton:
   version "0.1.0"
-  resolved "git+ssh://git@github.com/Waavi/react-native-skeleton.git#2dd11815d5004bade43f92a2daadd6f6b7f81901"
+  resolved "git+ssh://git@github.com/waavi/react-native-skeleton.git#2dd11815d5004bade43f92a2daadd6f6b7f81901"
   dependencies:
     react "16.6.3"
 
@@ -7883,9 +7883,9 @@ react-native-tab-view@^1.0.0, react-native-tab-view@^1.2.0:
   dependencies:
     prop-types "^15.6.1"
 
-react-native-utils@Waavi/react-native-utils:
+react-native-utils@waavi/react-native-utils:
   version "0.1.0"
-  resolved "git+ssh://git@github.com/Waavi/react-native-utils.git#5189064e20f64225a2716c6e509640ba1b6e85d4"
+  resolved "git+ssh://git@github.com/waavi/react-native-utils.git#5189064e20f64225a2716c6e509640ba1b6e85d4"
   dependencies:
     moment "^2.24.0"
 
