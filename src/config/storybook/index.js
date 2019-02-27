@@ -13,13 +13,8 @@ import '@modules/react-native-storybook/decorators/common'
 
 // import stories
 configure(() => {
-	// eslint-disable-next-line
-	if (__DEV__ && false) {
-		require('../components/SText/SText.stories')
-	} else {
-		require('./Welcome/Welcome.stories')
-		loadStories() // loads every '.stories.js' files within 'src' folder
-	}
+	require('./Welcome/Welcome.stories')
+	loadStories() // loads every '.stories.js' files within 'src' folder
 }, module)
 
 // Refer to https://github.com/storybooks/storybook/tree/master/app/react-native#start-command-parameters
