@@ -85,7 +85,7 @@ export function* signout(api) {
 	yield all([
 		call(api.auth.signout),
 		// call(removeToken),
-		call(delay, 500),
+		delay(500),
 	])
 	yield* cleanStore()
 	yield* resetToOnboardingStack()
