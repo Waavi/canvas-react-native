@@ -156,6 +156,7 @@ const styles = StyleSheet.create({
 		paddingBottom: 15,
 	},
 	container: {
+		minHeight: 22.5,
 		backgroundColor: Colors.transparent,
 	},
 })
