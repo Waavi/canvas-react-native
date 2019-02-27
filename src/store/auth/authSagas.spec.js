@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { expectSaga } from 'redux-saga-test-plan'
 import { AuthActions, NotificationsActions } from '#actions'
 import Api from '@/api'
