@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { func } from 'prop-types'
+import { func, shape } from 'prop-types'
 import { connect } from 'react-redux'
 import { AuthActions, GlobalActions } from '#actions'
 import { ScreenView, Button, Icon } from '@/components'
@@ -15,10 +15,10 @@ export class WalkthroughScreen extends Component {
 	static propTypes = {
 		showModalInfo: func.isRequired,
 		forceLogin: func.isRequired,
-		// navigation: shape({ navigate: func.isRequired }).isRequired,
+		navigation: shape({ navigate: func.isRequired }).isRequired,
 	}
 	render() {
-		const { showModalInfo, forceLogin } = this.props
+		const { showModalInfo, forceLogin, navigation } = this.props
 		return (
 			<ScreenView scrollable color="white" cls="col-stretch-center pt-3s px-s pb-s">
 				<Icon name="card" />
@@ -36,7 +36,7 @@ export class WalkthroughScreen extends Component {
 						})
 					}
 				/>
-				<Button text="blah" onPress={() => {}} />
+				<Button text="StoryBook" onPress={() => navigation.navigate('StorybookUI')} />
 				<Button text="blah" onPress={() => {}} />
 				<Button text="blah" onPress={() => {}} />
 				<Button text="blah" onPress={() => {}} />
