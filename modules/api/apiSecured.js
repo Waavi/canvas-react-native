@@ -4,9 +4,8 @@
 import moment from 'moment'
 import AppConfig from '@/config'
 import store from '@/store'
-import AuthActions from 'app/store/redux/auth'
-import GlobalActions from 'app/store/redux/global'
-import ERROR from 'app/utils/errors'
+import { AuthActions, NotificationsActions } from '#actions'
+import ERROR from '@/utils/errors'
 import {
 	saveTokenOnStorage,
 	getTokenFromStorage,
@@ -71,7 +70,7 @@ const authenticate = async () => {
 			await setToken(data.token, data.minutes)
 		}
 	} else {
-		store.dispatch(GlobalActions.error(ERROR.UNAUTHORIZED))
+		store.dispatch(NotificationsActions.error(ERROR.UNAUTHORIZED))
 	}
 }
 

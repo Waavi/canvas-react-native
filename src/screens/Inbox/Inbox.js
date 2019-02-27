@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from '#propTypes'
 import { connect } from 'react-redux'
-import { AuthActions, GlobalActions } from '#actions'
+import { AuthActions, NotificationsActions } from '#actions'
 import { ScreenView, Button } from '@/components'
 import { t } from '@/lang'
 
@@ -9,18 +9,18 @@ import { t } from '@/lang'
 	null,
 	{
 		signout: AuthActions.signout,
-		showModalInfo: GlobalActions.showModalInfo,
+		showNotificationInfo: NotificationsActions.showNotificationInfo,
 	}
 )
 export class InboxScreen extends Component {
 	static propTypes = {
 		signout: PropTypes.func.isRequired,
 		navigation: PropTypes.navigation.isRequired,
-		showModalInfo: PropTypes.func.isRequired,
+		showNotificationInfo: PropTypes.func.isRequired,
 	}
 
 	render() {
-		const { signout, showModalInfo, navigation } = this.props
+		const { signout, showNotificationInfo, navigation } = this.props
 		const { navigate } = navigation
 		return (
 			<ScreenView cls="flex-1 col-center space-around">
@@ -32,7 +32,7 @@ export class InboxScreen extends Component {
 					textAlign="center"
 					toUpper
 					onPress={() =>
-						showModalInfo({
+						showNotificationInfo({
 							title: 'título',
 							text: 'texto',
 							dismissBtnText: 'vale!',

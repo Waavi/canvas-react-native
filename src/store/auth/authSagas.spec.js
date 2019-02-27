@@ -1,5 +1,5 @@
 import { expectSaga } from 'redux-saga-test-plan'
-import { AuthActions, GlobalActions } from '#actions'
+import { AuthActions, NotificationsActions } from '#actions'
 import Api from '@/api'
 import { signin } from '@/store/auth/authSagas'
 
@@ -26,7 +26,7 @@ describe('store/authSagas', () => {
 		}
 
 		return expectSaga(signin, Api, { params })
-			.put(GlobalActions.showLoading())
+			.put(NotificationsActions.showLoading())
 			.run()
 	})
 })

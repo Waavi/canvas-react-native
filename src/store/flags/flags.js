@@ -1,7 +1,7 @@
 const flags = {
 	UNDEFINED: undefined,
 	WAITING: 'WAITING',
-	LOADING: 'WAITING',
+	LOADING: 'LOADING',
 	SUCCESS: 'SUCCESS',
 	OK: 'SUCCESS',
 	ERROR: 'ERROR',
@@ -9,5 +9,3 @@ const flags = {
 	FALSE: false,
 }
 export default flags
-
-export const AUTH_SIGNIN = 'AUTH_SIGNIN'
