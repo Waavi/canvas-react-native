@@ -30,7 +30,7 @@
 				"./src"
 			],
 			"pattern": "**/*.stories.js",
-			"outputFile": "./storybook/storyLoader.js"
+			"outputFile": "./src/config/storybook/storyLoader.js"
 		}
 	},
 	"rnpm": {
