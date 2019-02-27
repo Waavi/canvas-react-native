@@ -1,9 +1,11 @@
 import { expectSaga } from 'redux-saga-test-plan'
+// eslint-disable-next-line
 import { AuthActions, GlobalActions } from '#actions'
 import Api from '@/api'
 import { signin } from '@/store/auth/authSagas'
 
 describe('store/authSagas', () => {
+	// eslint-disable-next-line
 	const storeState = {
 		auth: {
 			userCode: null,
