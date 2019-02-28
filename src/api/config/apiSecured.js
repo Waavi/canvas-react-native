@@ -11,7 +11,7 @@ import {
 	getTokenFromStorage,
 	removeTokenFromStorage,
 } from './utils/tokenStorage'
-import Api from './api'
+import Api from './api' // eslint-disable-line
 
 const api = Api.get()
 
