@@ -1,8 +1,9 @@
 /* eslint-disable */
 import { expectSaga } from 'redux-saga-test-plan'
-import { AuthActions, NotificationsActions } from '#actions'
+import { AuthActions, FlagsActions } from '#actions'
 import Api from '@/api'
 import { signin } from '@/store/auth/authSagas'
+import FLAGS from '#flags'
 
 describe('store/authSagas', () => {
 	const storeState = {
@@ -27,7 +28,7 @@ describe('store/authSagas', () => {
 		}
 
 		return expectSaga(signin, Api, { params })
-			.put(NotificationsActions.showLoading())
+			.put(FlagsActions.setTrue(FLAGS.LOADING))
 			.run()
 	})
 })

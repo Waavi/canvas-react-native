@@ -3,7 +3,6 @@
 // import { Platform } from 'react-native'
 import { call, select, put, all, delay } from 'redux-saga/effects'
 import FLAGS from '#flags'
-console.log(FLAGS)
 // import { CLIENT_ERROR } from 'apisauce'
 import {
 	AuthActions,
@@ -47,7 +46,6 @@ export function* signin(api, { params }) {
 	} = params
 	yield put(AuthActions.setProvider(provider, socialAuthToken))
 	const { ok, data } = yield call(api.auth.signin, { id: email, password })
-	console.tron.log([ok, data])
 	if (ok && data && data.token) {
 		// yield call(setAuthOnKeychain, params)
 		// yield call(setToken, data.token, data.minutes)
