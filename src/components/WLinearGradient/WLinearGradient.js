@@ -5,7 +5,7 @@ import { Directions, Colors } from './utils'
 
 const DirectionsKeys = Object.keys(Directions)
 
-LinearGradient.propTypes = {
+WLinearGradient.propTypes = {
 	direction: PropTypes.oneOf([...DirectionsKeys, '']),
 	color: PropTypes.oneOf('primary', 'secondary', 'tertiary'),
 	colors: PropTypes.arrayOf(PropTypes.string),
@@ -24,7 +24,7 @@ LinearGradient.propTypes = {
 	]),
 }
 
-LinearGradient.defaultProps = {
+WLinearGradient.defaultProps = {
 	direction: '',
 	color: 'primary',
 	colors: Colors.primary,
@@ -33,7 +33,7 @@ LinearGradient.defaultProps = {
 	children: undefined,
 }
 
-export function LinearGradient({ direction, color, colors, start, end, children }) {
+export function WLinearGradient({ direction, color, colors, start, end, children }) {
 	const coords = direction ? Directions[direction] : { start, end }
 	const palette = color ? Colors[color] : colors
 	return (
