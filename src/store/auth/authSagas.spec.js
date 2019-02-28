@@ -6,6 +6,7 @@ import { signin } from '@/store/auth/authSagas'
 import FLAGS from '#flags'
 
 describe('store/authSagas', () => {
+	// eslint-disable-next-line
 	const storeState = {
 		auth: {
 			userCode: null,

@@ -13,7 +13,7 @@ import { ReduxifiedAppNavigator } from '@/store/navigation'
 @connect(
 	state => ({
 		isRehydrated: state.system.isRehydrated,
-		showLoading: FlagsSelectors.isLoading(state),
+		isLoading: FlagsSelectors.getIsLoading(state),
 		notification: state.notifications.notification,
 		navState: state.navigation,
 	}),
@@ -24,7 +24,7 @@ import { ReduxifiedAppNavigator } from '@/store/navigation'
 class AppLayout extends Component {
 	static propTypes = {
 		isRehydrated: PropTypes.bool.isRequired,
-		showLoading: PropTypes.bool.isRequired,
+		isLoading: PropTypes.bool.isRequired,
 		notification: PropTypes.shape({
 			visible: PropTypes.bool.isRequired,
 			title: PropTypes.string,
@@ -113,7 +113,7 @@ class AppLayout extends Component {
 	}
 
 	render() {
-		const { isRehydrated, showLoading, notification } = this.props
+		const { isRehydrated, isLoading, notification } = this.props
 		if (!isRehydrated) {
 			return <Loading active opacity={1} />
 		}
@@ -121,7 +121,7 @@ class AppLayout extends Component {
 		return (
 			<View style={styles.container}>
 				<ReduxifiedAppNavigator ref={this.navigatorRef} />
-				<Loading active={showLoading} opacity={1} position="absolute" />
+				<Loading active={isLoading} opacity={1} position="absolute" />
 				<Modal visible={visible} {...modalProps} onDismiss={this.handleModalDismiss} />
 			</View>
 		)
