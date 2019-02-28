@@ -69,47 +69,9 @@ export const Colors = {
 		error: red,
 	},
 
-	card: {
-		subscribed: green,
-		notSubscribed: basics.lightgray,
-	},
-
-	promo: {
-		reward: green,
-		points: green,
-		pointsLight: '#70f0c9',
-		offer: '#95D6C7',
-		offerLight: '#dff2ee',
-		stamp: '#FABA59',
-		stampLight: '#fde3bc',
-		stamps: '#FABA59',
-		stampsLight: '#fde3bc',
-		coupon: '#EECB19',
-		couponLight: '#f5e078',
-		couponp: '#EECB19',
-		couponpLight: '#f5e078',
-		bono: '#FA4C37',
-		bonoLight: '#fca59b',
-	},
-
-	rating: {
-		gray: '#dce1e6',
-		darkgray: basics.darkgray,
-		green,
-		black: basics.black,
-	},
-
-	catalog: {
-		background: '#3e4854',
-		gray: '#647685',
-		title: '#14e5a9',
-		price: '#f9da31',
-		thumbup: '#14e5a9',
-		thumbdown: '#fe6448',
-	},
-
-	txnResult: {
-		promo: basics.darkorange,
-		rule: green,
+	gradients: {
+		primary: ['rgb(72, 192, 182)', 'rgb(77, 108, 204)', 'rgb(84, 0, 232)'],
+		secondary: ['rgb(72, 192, 182)', 'rgb(77, 108, 204)'],
+		tertiary: ['rgb(60, 223, 226)', 'rgb(72, 192, 182)'],
 	},
 }

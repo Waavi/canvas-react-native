@@ -57,6 +57,7 @@
 		3E519118221EC44A00935FAA /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E519109221EC44A00935FAA /* EvilIcons.ttf */; };
 		3E519119221EC44A00935FAA /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E51910A221EC44A00935FAA /* SimpleLineIcons.ttf */; };
 		3E51911A221EC44A00935FAA /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E51910B221EC44A00935FAA /* MaterialIcons.ttf */; };
+		3E9DAF3A2227E1E3005AF049 /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E9DAF0E2227E1BE005AF049 /* libBVLinearGradient.a */; };
 		51F48029C05341E8815459CB /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED9CE5BD05934AA9B655184C /* Montserrat-Bold.ttf */; };
 		78427DF3D1F24810A2FD2727 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17A91DFAEEB5421BAB2ECF4B /* Montserrat-Light.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
@@ -336,6 +337,20 @@
 			remoteGlobalIDString = 2D2A28471D9B043800D4039D;
 			remoteInfo = "RNLanguages-tvOS";
 		};
+		3E9DAF0D2227E1BE005AF049 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E9DAF082227E1BD005AF049 /* BVLinearGradient.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = BVLinearGradient;
+		};
+		3E9DAF0F2227E1BE005AF049 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E9DAF082227E1BD005AF049 /* BVLinearGradient.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64AA15081EF7F30100718508;
+			remoteInfo = "BVLinearGradient-tvOS";
+		};
 		5E9157321DD0AC6500FF2AA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */;
@@ -416,6 +431,7 @@
 		3E519109221EC44A00935FAA /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
 		3E51910A221EC44A00935FAA /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
 		3E51910B221EC44A00935FAA /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		3E9DAF082227E1BD005AF049 /* BVLinearGradient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BVLinearGradient.xcodeproj; path = "../node_modules/react-native-linear-gradient/BVLinearGradient.xcodeproj"; sourceTree = "<group>"; };
 		5B41B7FA07C4479BB7E580C3 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Regular.ttf"; path = "../src/assets/fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		6C451D45E8764AA595B07465 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Thin.ttf"; path = "../src/assets/fonts/Montserrat-Thin.ttf"; sourceTree = "<group>"; };
@@ -446,6 +462,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E9DAF3A2227E1E3005AF049 /* libBVLinearGradient.a in Frameworks */,
 				3E5190FB221EC2B400935FAA /* libRNLanguages.a in Frameworks */,
 				ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
@@ -675,6 +692,15 @@
 			path = "../node_modules/react-native-vector-icons/Fonts";
 			sourceTree = "<group>";
 		};
+		3E9DAF092227E1BD005AF049 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E9DAF0E2227E1BE005AF049 /* libBVLinearGradient.a */,
+				3E9DAF102227E1BE005AF049 /* libBVLinearGradient.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -696,6 +722,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				3E9DAF082227E1BD005AF049 /* BVLinearGradient.xcodeproj */,
 				3E5190C5221EC24900935FAA /* RNLanguages.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
@@ -888,6 +915,10 @@
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 3E9DAF092227E1BD005AF049 /* Products */;
+					ProjectRef = 3E9DAF082227E1BD005AF049 /* BVLinearGradient.xcodeproj */;
+				},
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
@@ -1210,6 +1241,20 @@
 			fileType = archive.ar;
 			path = "libRNLanguages-tvOS.a";
 			remoteRef = 3E5190F9221EC24A00935FAA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3E9DAF0E2227E1BE005AF049 /* libBVLinearGradient.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBVLinearGradient.a;
+			remoteRef = 3E9DAF0D2227E1BE005AF049 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3E9DAF102227E1BE005AF049 /* libBVLinearGradient.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBVLinearGradient.a;
+			remoteRef = 3E9DAF0F2227E1BE005AF049 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */ = {
