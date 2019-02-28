@@ -8,7 +8,7 @@ const DirectionsKeys = Object.keys(Directions)
 LinearGradient.propTypes = {
 	direction: PropTypes.oneOf([...DirectionsKeys, '']),
 	color: PropTypes.oneOf('primary', 'secondary', 'tertiary'),
-	colors: PropTypes.oneOfType([PropTypes.string]),
+	colors: PropTypes.arrayOf(PropTypes.string),
 	start: PropTypes.shape({
 		x: Number,
 		y: Number,
