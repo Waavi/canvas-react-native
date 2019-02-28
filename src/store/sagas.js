@@ -10,8 +10,6 @@ import {
 	resetToOnboardingStack,
 } from '@/store/system'
 import { AuthTypes, signin, signout, forceLogin } from '@/store/auth'
-import { TestTypes, incrementAsync } from '@/store/test'
-import { ItemsTypes, get as getItems, getMore as getMoreItems } from '@/store/items'
 
 export default function* rootSaga() {
 	const sagaIndex = [
@@ -25,11 +23,6 @@ export default function* rootSaga() {
 		takeLatest(AuthTypes.SIGNIN, signin, Api),
 		takeLatest(AuthTypes.SIGNOUT, signout, Api),
 		takeLatest(AuthTypes.FORCE_LOGIN, forceLogin, Api),
-		// Test
-		takeLatest(TestTypes.INCREMENT_ASYNC, incrementAsync),
-		// Items
-		takeLatest(ItemsTypes.GET, getItems, Api),
-		takeLatest(ItemsTypes.GET_MORE, getMoreItems, Api),
 	]
 	yield all(sagaIndex)
 }

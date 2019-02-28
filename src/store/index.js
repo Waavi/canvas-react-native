@@ -6,8 +6,6 @@ import { reducer as navigationData } from './navigationData'
 import { reducer as notifications } from './notifications'
 import { reducer as flags } from './flags'
 import { reducer as auth } from './auth'
-import { reducer as test } from './test'
-import { reducer as items } from './items'
 import configureStore from './configureStore'
 import rootSaga from './sagas'
 import { config } from './rehydration'
@@ -20,8 +18,6 @@ const rootReducer = persistCombineReducers(config, {
 	flags,
 	navigationData,
 	auth,
-	test,
-	items,
 })
 
 const store = configureStore(rootReducer, rootSaga)
