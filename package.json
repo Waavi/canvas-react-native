@@ -7,7 +7,7 @@
 		"restart": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
 		"test": "jest --detectOpenHandles",
 		"lint": "./node_modules/.bin/eslint src",
-		"validate": "jest --detectOpenHandles && ./node_modules/.bin/eslint src",
+		"validate": "scripts/validate.sh",
 		"clean": "rm -rf $TMPDIR/react-* && watchman watch-del-all && yarn cache clean",
 		"clear": "rm -rf $TMPDIR/react-* && watchman watch-del-all && rm -rf ios/build/ModuleCache/* && rm -rf android/app/build && rm -rf node_modules/ && yarn cache clean",
 		"watchmant-stop": "watchman watch-del-all",
