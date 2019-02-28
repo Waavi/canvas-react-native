@@ -1,6 +1,6 @@
 export * from './Layout'
 export * from './SText'
-export * from './Button'
+export * from './WButton'
 export * from './Icon'
 export * from './Loading'
 export * from './Modal'

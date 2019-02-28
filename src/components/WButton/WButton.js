@@ -4,7 +4,7 @@ import { ClsCache } from '@modules/react-native-cls'
 import { TouchableOpacity, View, Text } from 'react-native'
 import clsStyles from './clsStyles'
 
-export class Button extends Component {
+export class WButton extends Component {
 	static propTypes = {
 		cls: PropTypes.cls,
 		text: PropTypes.string.isRequired,

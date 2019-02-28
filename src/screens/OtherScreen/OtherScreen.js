@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { func, shape } from 'prop-types'
-import { ScreenView, SText, Button } from '@/components'
+import { ScreenView, SText, WButton } from '@/components'
 
 export class OtherScreen extends Component {
 	static propTypes = {
@@ -21,7 +21,7 @@ export class OtherScreen extends Component {
 		return (
 			<ScreenView cls="col-center">
 				<SText size={20}>OtherScreen</SText>
-				<Button text="Go to another screen" onPress={() => push('OtherScreen')} />
+				<WButton text="Go to another screen" onPress={() => push('OtherScreen')} />
 			</ScreenView>
 		)
 	}
