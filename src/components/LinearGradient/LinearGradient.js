@@ -1,38 +1,44 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from '#propTypes'
 import ReactNativeLinearGradient from 'react-native-linear-gradient'
+import { Directions, Colors } from './utils'
 
-export class LinearGradient extends Component {
-	componentName = 'LinearGradient'
+const DirectionsKeys = Object.keys(Directions)
 
-	typeMapping = {
-		gradientData: {},
-	}
+LinearGradient.propTypes = {
+	direction: PropTypes.oneOf([...DirectionsKeys, '']),
+	color: PropTypes.oneOf('primary', 'secondary', 'tertiary'),
+	colors: PropTypes.oneOfType([PropTypes.string]),
+	start: PropTypes.shape({
+		x: Number,
+		y: Number,
+	}),
+	end: PropTypes.shape({
+		x: Number,
+		y: Number,
+	}),
+	children: PropTypes.oneOfType([
+		PropTypes.element,
+		PropTypes.arrayOf(PropTypes.element),
+		undefined,
+	]),
+}
 
-	static propTypes = {
-		rkType: PropTypes.string,
-		colors: PropTypes.array,
-		start: PropTypes.object,
-		end: PropTypes.object,
-		children: oneOfType([PropTypes.element, arrayOf(PropTypes.element)]),
-	}
+LinearGradient.defaultProps = {
+	direction: '',
+	color: 'primary',
+	colors: Colors.primary,
+	start: Directions.vertical.start,
+	end: Directions.vertical.end,
+	children: undefined,
+}
 
-	render() {
-		const {
-			colors: givenColors,
-			start: givenStart,
-			end: givenEnd,
-			children,
-			...otherProps
-		} = this.props
-		const { gradientData } = this.defineStyles()
-		const colors = givenColors || this.extractNonStyleValue(gradientData, 'colors')
-		const start = givenStart || this.extractNonStyleValue(gradientData, 'start')
-		const end = givenEnd || this.extractNonStyleValue(gradientData, 'end')
-		return (
-			<ReactNativeLinearGradient colors={colors} start={start} end={end} {...otherProps}>
-				{children}
-			</ReactNativeLinearGradient>
-		)
-	}
+export function LinearGradient({ direction, color, colors, start, end, children }) {
+	const coords = direction ? Directions[direction] : { start, end }
+	const palette = color ? Colors[color] : colors
+	return (
+		<ReactNativeLinearGradient colors={palette} start={coords.start} end={coords.end}>
+			{children}
+		</ReactNativeLinearGradient>
+	)
 }
