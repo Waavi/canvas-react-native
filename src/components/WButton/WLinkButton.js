@@ -3,19 +3,19 @@ import PropTypes from '#propTypes'
 import { TouchableOpacity } from 'react-native'
 import { WText } from '../WText'
 
-LinkButton.propTypes = {
+WLinkButton.propTypes = {
 	text: PropTypes.string.isRequired,
 	onPress: PropTypes.func.isRequired,
 	size: PropTypes.number.isRequired,
 	cls: PropTypes.string,
 	style: PropTypes.textStyle,
 }
-LinkButton.defaultProps = {
+WLinkButton.defaultProps = {
 	cls: undefined,
 	style: undefined,
 }
 
-export function LinkButton({ text, onPress, size, cls, style, ...restProps }) {
+export function WLinkButton({ text, onPress, size, cls, style, ...restProps }) {
 	return (
 		<TouchableOpacity onPress={onPress} {...restProps}>
 			<WText size={size} cls={cls} style={style}>

@@ -3,24 +3,24 @@ import React from 'react'
 import { storiesOf } from '@storybook/react-native'
 import { StoryView, StoryCase, StoryHeader } from '@modules/react-native-storybook/components'
 import { SPACINGS_ABSOLUTE, SPACINGS_LIST } from '@/theme/cls/spacingClsStyles'
-import { Button } from './Button'
-import { LinkButton } from './LinkButton'
+import { WButton } from './WButton'
+import { WLinkButton } from './WLinkButton'
 
 const handlePress = (text = 'Clicked!') => () => console.tron.log(text)
 
-storiesOf('Button', module)
+storiesOf('WButton', module)
 	.add('colors', () => {
 		const colors = [undefined, 'green', 'white', 'dark', 'dark-light', 'dark-outline', 'yellow']
 		return (
 			<StoryView scrollable>
-				<StoryHeader.h1 text="Button colors" />
+				<StoryHeader.h1 text="WButton colors" />
 				{colors.map(color => (
 					<StoryCase
 						key={color || 'none'}
 						text={color ? `with cls '${color}'` : 'default'}
 						padded
 					>
-						<Button cls={color} text="Lorem ipsum" onPress={handlePress()} />
+						<WButton cls={color} text="Lorem ipsum" onPress={handlePress()} />
 					</StoryCase>
 				))}
 			</StoryView>
@@ -30,14 +30,14 @@ storiesOf('Button', module)
 		const sizes = [undefined, 'small', 'mini']
 		return (
 			<StoryView scrollable>
-				<StoryHeader.h1 text="Button sizes" />
+				<StoryHeader.h1 text="WButton sizes" />
 				{sizes.map(size => (
 					<StoryCase
 						key={size || 'none'}
 						text={size ? `with cls '${size}'` : 'default'}
 						padded
 					>
-						<Button cls={size} text="Lorem ipsum" onPress={handlePress()} />
+						<WButton cls={size} text="Lorem ipsum" onPress={handlePress()} />
 					</StoryCase>
 				))}
 			</StoryView>
@@ -46,25 +46,25 @@ storiesOf('Button', module)
 	.add('center & flex', () => (
 		<StoryView scrollable>
 			<StoryHeader.h1
-				text="Centered Button"
+				text="Centered WButton"
 				description="The following container have { alignItems: 'stretch' }"
 			/>
 			<StoryCase text="default" padded style={{ alignItems: 'stretch' }}>
-				<Button text="Lorem ipsum" onPress={handlePress()} />
+				<WButton text="Lorem ipsum" onPress={handlePress()} />
 			</StoryCase>
 			<StoryCase text={"with cls 'center'"} padded style={{ alignItems: 'stretch' }}>
-				<Button cls="center" text="Lorem ipsum" onPress={handlePress()} />
+				<WButton cls="center" text="Lorem ipsum" onPress={handlePress()} />
 			</StoryCase>
 
 			<StoryHeader.h1
-				text="Stretched Button"
+				text="Stretched WButton"
 				description="The following container have { alignItems: 'center' }"
 			/>
 			<StoryCase text="default" padded style={{ alignItems: 'center' }}>
-				<Button text="Lorem ipsum" onPress={handlePress()} />
+				<WButton text="Lorem ipsum" onPress={handlePress()} />
 			</StoryCase>
 			<StoryCase text={"with cls 'stretch'"} padded style={{ alignItems: 'center' }}>
-				<Button cls="stretch" text="Lorem ipsum" onPress={handlePress()} />
+				<WButton cls="stretch" text="Lorem ipsum" onPress={handlePress()} />
 			</StoryCase>
 
 			<StoryHeader.h1
@@ -76,14 +76,14 @@ storiesOf('Button', module)
 				padded
 				style={{ flexDirection: 'row', justifyContent: 'center' }}
 			>
-				<Button text="Lorem ipsum" onPress={handlePress()} />
+				<WButton text="Lorem ipsum" onPress={handlePress()} />
 			</StoryCase>
 			<StoryCase
 				text={"with cls 'flex-1'"}
 				padded
 				style={{ flexDirection: 'row', justifyContent: 'space-between' }}
 			>
-				<Button cls="flex-1" text="Lorem ipsum" onPress={handlePress()} />
+				<WButton cls="flex-1" text="Lorem ipsum" onPress={handlePress()} />
 			</StoryCase>
 		</StoryView>
 	))
@@ -91,31 +91,31 @@ storiesOf('Button', module)
 		const colors = [undefined, 'green', 'white', 'dark', 'dark-light', 'dark-outline', 'yellow']
 		return (
 			<StoryView scrollable>
-				<StoryHeader.h1 text="Disabled Buttons" />
+				<StoryHeader.h1 text="Disabled WButtons" />
 				{colors.map(color => (
 					<StoryCase
 						key={color || 'none'}
 						text={color ? `with cls '${color}'` : 'default'}
 						padded
 					>
-						<Button cls={color} disabled text="Lorem ipsum" onPress={handlePress()} />
+						<WButton cls={color} disabled text="Lorem ipsum" onPress={handlePress()} />
 					</StoryCase>
 				))}
 			</StoryView>
 		)
 	})
-	.add('LinkButton', () => (
+	.add('WLinkButton', () => (
 		<StoryView scrollable>
-			<StoryHeader.h1 text="Link Button" />
+			<StoryHeader.h1 text="Link WButton" />
 			<StoryCase text="default" padded>
-				<LinkButton size={18} text="Lorem ipsum" onPress={handlePress()} />
+				<WLinkButton size={18} text="Lorem ipsum" onPress={handlePress()} />
 			</StoryCase>
 		</StoryView>
 	))
 	.add('margins', () => {
 		const example = cls => (
 			<StoryCase text={cls ? `with cls '${cls}'` : 'default'}>
-				<Button cls={cls} text="Lorem ipsum" onPress={handlePress()} />
+				<WButton cls={cls} text="Lorem ipsum" onPress={handlePress()} />
 			</StoryCase>
 		)
 		return (
