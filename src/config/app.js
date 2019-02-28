@@ -8,12 +8,13 @@ import {
 	WEB_URL,
 	API_URL,
 	API_KEY,
+	API_IS_MOCKED,
 	ANALYTICS_UA,
 	REDUX_PERSIST_KEY,
 	REDUX_PERSIST_VERSION,
 	REDUX_PERSIST_ACTIVE,
 	STORYBOOK_SHOW,
-} from 'react-native-dotenv' /* ___timestamp___2019-02-22___11:31:22___ */
+} from 'react-native-dotenv' /* ___timestamp___2019-02-28___09:51:22___ */
 
 const webUrl = WEB_URL
 
@@ -31,7 +32,7 @@ const config = {
 	clientImageBaseUrl: `${webUrl}/c/`,
 	analyticsUA: ANALYTICS_UA,
 	api: {
-		isMocked: true,
+		isMocked: API_IS_MOCKED === 'true',
 		config: {
 			baseURL: API_URL,
 			headers: {
