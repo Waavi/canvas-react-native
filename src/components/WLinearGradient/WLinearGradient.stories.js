@@ -3,56 +3,56 @@ import React from 'react'
 import { storiesOf } from '@storybook/react-native'
 import { View } from 'react-native'
 import { StoryView, StoryCase, StoryHeader } from '@modules/react-native-storybook/components'
-import { LinearGradient } from './LinearGradient'
+import { WLinearGradient } from './WLinearGradient'
 
 const styles = {
 	width: 50,
 	height: 50,
 }
 
-storiesOf('LinearGradient', module)
+storiesOf('WLinearGradient', module)
 	.add('Directions', () => (
 		<StoryView scrollable>
-			<StoryHeader.h1 text="LinearGradient" />
+			<StoryHeader.h1 text="WLinearGradient" />
 			<StoryCase text="default">
-				<LinearGradient>
+				<WLinearGradient>
 					<View style={styles} />
-				</LinearGradient>
+				</WLinearGradient>
 			</StoryCase>
 			<StoryCase text="vertical-reverse">
-				<LinearGradient direction="vertical-reverse">
+				<WLinearGradient direction="vertical-reverse">
 					<View style={styles} />
-				</LinearGradient>
+				</WLinearGradient>
 			</StoryCase>
 			<StoryCase text="horizontal">
-				<LinearGradient direction="horizontal">
+				<WLinearGradient direction="horizontal">
 					<View style={styles} />
-				</LinearGradient>
+				</WLinearGradient>
 			</StoryCase>
 			<StoryCase text="horizontal-reverse">
-				<LinearGradient direction="horizontal-reverse">
+				<WLinearGradient direction="horizontal-reverse">
 					<View style={styles} />
-				</LinearGradient>
+				</WLinearGradient>
 			</StoryCase>
 		</StoryView>
 	))
 	.add('Colors', () => (
 		<StoryView scrollable>
-			<StoryHeader.h1 text="LinearGradient" />
+			<StoryHeader.h1 text="WLinearGradient" />
 			<StoryCase text="default">
-				<LinearGradient>
+				<WLinearGradient>
 					<View style={styles} />
-				</LinearGradient>
+				</WLinearGradient>
 			</StoryCase>
 			<StoryCase text="secondary">
-				<LinearGradient color="secondary" direction="horizontal">
+				<WLinearGradient color="secondary" direction="horizontal">
 					<View style={styles} />
-				</LinearGradient>
+				</WLinearGradient>
 			</StoryCase>
 			<StoryCase text="tertiary">
-				<LinearGradient color="tertiary" direction="horizontal">
+				<WLinearGradient color="tertiary" direction="horizontal">
 					<View style={styles} />
-				</LinearGradient>
+				</WLinearGradient>
 			</StoryCase>
 		</StoryView>
 	))
