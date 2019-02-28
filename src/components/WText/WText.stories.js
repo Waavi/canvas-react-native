@@ -5,9 +5,9 @@ import { StoryView, StoryHeader, StoryCase } from '@modules/react-native-storybo
 import { View, StyleSheet } from 'react-native'
 import { Fonts, Colors } from '@/theme'
 import { SPACINGS_ABSOLUTE, SPACINGS_LIST } from '@/theme/cls/spacingClsStyles'
-import { SText } from './SText'
+import { WText } from './WText'
 
-storiesOf('SText', module)
+storiesOf('WText', module)
 	.add('font sizes', () => {
 		const fontSizes = [10, 12, 14, 16, 18, 20, 24, 28, 35]
 		const scaled = boolean('Scaled', true)
@@ -15,7 +15,7 @@ storiesOf('SText', module)
 			<StoryView align="stretch" padded>
 				{fontSizes.map(size => (
 					<View key={size} style={styles.wrapper}>
-						<SText size={size} scaled={scaled}>{`SText with size ${size}`}</SText>
+						<WText size={size} scaled={scaled}>{`WText with size ${size}`}</WText>
 					</View>
 				))}
 			</StoryView>
@@ -27,7 +27,7 @@ storiesOf('SText', module)
 			<StoryView align="stretch" padded>
 				{fontTypes.map(type => (
 					<View key={type} style={styles.wrapper}>
-						<SText size={20} cls={type}>{`SText with cls '${type}'`}</SText>
+						<WText size={20} cls={type}>{`WText with cls '${type}'`}</WText>
 					</View>
 				))}
 			</StoryView>
@@ -45,7 +45,7 @@ storiesOf('SText', module)
 			<StoryView align="stretch" padded>
 				{colors.map(({ color, style }) => (
 					<View key={color} style={[styles.wrapper, style]}>
-						<SText size={20} cls={color}>{`SText with cls '${color}'`}</SText>
+						<WText size={20} cls={color}>{`WText with cls '${color}'`}</WText>
 					</View>
 				))}
 			</StoryView>
@@ -57,7 +57,7 @@ storiesOf('SText', module)
 			<StoryView align="stretch" padded>
 				{alignments.map(align => (
 					<View key={align} style={styles.wrapper}>
-						<SText size={20} cls={align}>{`SText with cls '${align}'`}</SText>
+						<WText size={20} cls={align}>{`WText with cls '${align}'`}</WText>
 					</View>
 				))}
 			</StoryView>
@@ -79,9 +79,9 @@ storiesOf('SText', module)
 			<StoryCase text={cls ? `Each item with cls '${cls}'` : 'default'}>
 				<View style={flexWrapper}>
 					{items.map(item => (
-						<SText key={item} cls={cls} size={20} style={textStyle}>
+						<WText key={item} cls={cls} size={20} style={textStyle}>
 							{item}
-						</SText>
+						</WText>
 					))}
 				</View>
 			</StoryCase>
@@ -104,9 +104,9 @@ storiesOf('SText', module)
 		}
 		const example = cls => (
 			<StoryCase text={cls ? `with cls '${cls}'` : 'default'}>
-				<SText cls={cls} size={16} style={textStyle}>
+				<WText cls={cls} size={16} style={textStyle}>
 					Lorem ipsum
-				</SText>
+				</WText>
 			</StoryCase>
 		)
 		return (

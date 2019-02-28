@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from '#propTypes'
 import { Text } from 'react-native'
-import { SText } from './SText'
+import { WText } from './WText'
 
 PropTypes.propTypes = {
 	cls: PropTypes.string,
@@ -18,7 +18,7 @@ PropTypes.defaultProps = {
 	cls: undefined,
 }
 // eslint-disable-next-line
-export function STextArray({ cls, texts, children, ...restProps }) {
+export function WTextArray({ cls, texts, children, ...restProps }) {
 	return <Text {...restProps}>{texts.map((item, index) => textItem(cls, item, index))}</Text>
 }
 
@@ -34,8 +34,8 @@ function textItem(cls, item, index) {
 		computedCls += ' green'
 	}
 	return (
-		<SText key={index} cls={computedCls}>
+		<WText key={index} cls={computedCls}>
 			{item.text}
-		</SText>
+		</WText>
 	)
 }
