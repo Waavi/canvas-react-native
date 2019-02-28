@@ -3,7 +3,6 @@
 // import { Platform } from 'react-native'
 import { call, select, put, all, delay } from 'redux-saga/effects'
 import FLAGS from '#flags'
-console.log(FLAGS)
 // import { CLIENT_ERROR } from 'apisauce'
 import {
 	AuthActions,
