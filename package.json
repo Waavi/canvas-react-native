@@ -52,6 +52,7 @@
 		"react-native-cli": "^2.0.1",
 		"react-native-gesture-handler": "1.0.16",
 		"react-native-languages": "^3.0.1",
+		"react-native-linear-gradient": "2.4.0",
 		"react-native-safe-area-view": "^0.11.0",
 		"react-native-skeleton": "https://github.com/Waavi/react-native-skeleton.git",
 		"react-native-utils": "https://github.com/Waavi/react-native-utils.git",
