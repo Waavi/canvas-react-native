@@ -12,7 +12,6 @@ function loadStories() {
 	require('../../components/Loading/Loading.stories')
 	require('../../components/Modal/Modal.stories')
 	require('../../components/SText/SText.stories')
-	require('../../config/storybook/Welcome/Welcome.stories')
 }
 
 const stories = [
@@ -23,7 +22,6 @@ const stories = [
 	'../../components/Loading/Loading.stories',
 	'../../components/Modal/Modal.stories',
 	'../../components/SText/SText.stories',
-	'../../config/storybook/Welcome/Welcome.stories',
 ]
 
 module.exports = {
