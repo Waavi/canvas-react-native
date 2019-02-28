@@ -15,7 +15,6 @@ import '@modules/react-native-storybook/decorators/common'
 
 // import stories
 configure(() => {
-	require('./Welcome/Welcome.stories')
 	loadStories() // loads every '.stories.js' files within 'src' folder
 }, module)
 
