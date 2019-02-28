@@ -1,24 +1,24 @@
 import React, { Component } from 'react'
 import { func, shape } from 'prop-types'
 import { connect } from 'react-redux'
-import { AuthActions, GlobalActions } from '#actions'
+import { AuthActions, NotificationsActions } from '#actions'
 import { ScreenView, Button, Icon } from '@/components'
 
 @connect(
 	null,
 	{
 		forceLogin: AuthActions.forceLogin,
-		showModalInfo: GlobalActions.showModalInfo,
+		showNotificationInfo: NotificationsActions.showNotificationInfo,
 	}
 )
 export class WalkthroughScreen extends Component {
 	static propTypes = {
-		showModalInfo: func.isRequired,
+		showNotificationInfo: func.isRequired,
 		forceLogin: func.isRequired,
 		navigation: shape({ navigate: func.isRequired }).isRequired,
 	}
 	render() {
-		const { showModalInfo, forceLogin, navigation } = this.props
+		const { showNotificationInfo, forceLogin, navigation } = this.props
 		return (
 			<ScreenView scrollable color="white" cls="col-stretch-center pt-3s px-s pb-s">
 				<Icon name="card" />
@@ -28,7 +28,7 @@ export class WalkthroughScreen extends Component {
 					textAlign="center"
 					toUpper
 					onPress={() =>
-						showModalInfo({
+						showNotificationInfo({
 							title: 'título',
 							text: 'texto',
 							dismissBtnText: 'vale!',

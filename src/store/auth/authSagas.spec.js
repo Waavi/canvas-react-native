@@ -1,8 +1,9 @@
+/* eslint-disable */
 import { expectSaga } from 'redux-saga-test-plan'
-// eslint-disable-next-line
-import { AuthActions, GlobalActions } from '#actions'
+import { AuthActions, FlagsActions } from '#actions'
 import Api from '@/api'
 import { signin } from '@/store/auth/authSagas'
+import FLAGS from '#flags'
 
 describe('store/authSagas', () => {
 	// eslint-disable-next-line
@@ -28,7 +29,7 @@ describe('store/authSagas', () => {
 		}
 
 		return expectSaga(signin, Api, { params })
-			.put(GlobalActions.showLoading())
+			.put(FlagsActions.setTrue(FLAGS.LOADING))
 			.run()
 	})
 })

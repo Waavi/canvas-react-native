@@ -2,10 +2,11 @@
 
 // import { Platform } from 'react-native'
 import { call, select, put, all, delay } from 'redux-saga/effects'
+import FLAGS from '#flags'
 // import { CLIENT_ERROR } from 'apisauce'
 import {
 	AuthActions,
-	GlobalActions,
+	FlagsActions,
 	NavigationActions,
 	CategoriesActions,
 	AccountActions,
@@ -15,7 +16,6 @@ import {
 //import { googleSignout } from '@/utils/social/googleSocial'
 // import fcm from '@/utils/fcm'
 // import { setToken, setAuthOnKeychain, removeToken } from '@/api/apiSecured'
-import FLAG from '#flags'
 import ERROR from '@/utils/errors'
 // import { fireActionAfterLogin } from '@/utils/actionsCenter'
 // import { get as getAccount } from './account'
@@ -38,7 +38,7 @@ import { resetToMainStack, resetToOnboardingStack, navigateTo } from '@/store/sy
 // }
 
 export function* signin(api, { params }) {
-	yield put(GlobalActions.showLoading())
+	yield put(FlagsActions.setTrue(FLAGS.LOADING))
 	const {
 		provider,
 		socialAuthToken = null,
@@ -56,7 +56,7 @@ export function* signin(api, { params }) {
 		// Analytics.setUser(userId)
 		// Analytics.trackEvent({ category: 'User', action: 'Signin' })
 	}
-	yield put(GlobalActions.hideLoading())
+	yield put(FlagsActions.remove(FLAGS.LOADING))
 }
 
 // export function* forgotPassword(api, { params }) {
@@ -81,7 +81,7 @@ export function* signout(api) {
 	//     provider: state.auth.provider
 	// }))
 	// Analytics.trackEvent({ category: 'User', action: 'Signout' })
-	yield put(GlobalActions.showLoading())
+	yield put(FlagsActions.setTrue(FLAGS.LOADING))
 	yield all([
 		call(api.auth.signout),
 		// call(removeToken),
@@ -95,7 +95,7 @@ export function* signout(api) {
 	// if (provider === 'google') {
 	//     googleSignout()
 	// }
-	yield put(GlobalActions.hideLoading())
+	yield put(FlagsActions.remove(FLAGS.LOADING))
 }
 
 function* cleanStore() {

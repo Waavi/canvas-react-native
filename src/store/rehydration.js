@@ -3,7 +3,7 @@ import { persistStore } from 'redux-persist'
 import AppConfig from '@/config'
 import { SystemActions } from '#actions'
 
-let whitelist = ['navigation', 'navigationData']
+let whitelist = ['system', 'navigation', 'navigationData']
 
 if (__DEV__) {
 	whitelist = [...whitelist, 'test']

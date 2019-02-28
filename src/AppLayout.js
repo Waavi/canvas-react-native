@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from '#propTypes'
 import { connect } from 'react-redux'
-import { GlobalActions, NavigationActions } from '#actions'
+import { NotificationsActions, NavigationActions } from '#actions'
+import { FlagsSelectors } from '#selectors'
 import { View, StyleSheet, BackHandler } from 'react-native'
 import { Loading, Modal } from '@/components'
 import { ReduxifiedAppNavigator } from '@/store/navigation'
@@ -12,21 +13,19 @@ import { ReduxifiedAppNavigator } from '@/store/navigation'
 @connect(
 	state => ({
 		isRehydrated: state.system.isRehydrated,
-		showLoading: state.global.loading,
-		loadingOpacity: state.global.loadingOpacity,
-		modalData: state.global.modalData,
+		isLoading: FlagsSelectors.getIsLoading(state),
+		notification: state.notifications.notification,
 		navState: state.navigation,
 	}),
 	{
-		hideModal: GlobalActions.hideModal,
+		hideNotification: NotificationsActions.hideNotification,
 	}
 )
 class AppLayout extends Component {
 	static propTypes = {
 		isRehydrated: PropTypes.bool.isRequired,
-		showLoading: PropTypes.bool.isRequired,
-		loadingOpacity: PropTypes.number.isRequired,
-		modalData: PropTypes.shape({
+		isLoading: PropTypes.bool.isRequired,
+		notification: PropTypes.shape({
 			visible: PropTypes.bool.isRequired,
 			title: PropTypes.string,
 			text: PropTypes.string,
@@ -45,7 +44,7 @@ class AppLayout extends Component {
 			routes: PropTypes.array.isRequired,
 			index: PropTypes.number.isRequired,
 		}).isRequired,
-		hideModal: PropTypes.func.isRequired,
+		hideNotification: PropTypes.func.isRequired,
 	}
 
 	constructor(props) {
@@ -62,17 +61,17 @@ class AppLayout extends Component {
 	}
 
 	handleModalDismiss = () => {
-		const { modalData, hideModal } = this.props
-		if (modalData.onDismiss) {
-			modalData.onDismiss()
+		const { notification, hideNotification } = this.props
+		if (notification.onDismiss) {
+			notification.onDismiss()
 		}
-		hideModal()
+		hideNotification()
 	}
 
 	handleBackAndroidButton = () => {
-		const { modalData, navState } = this.props
+		const { notification, navState } = this.props
 		// if there is a modal shown, back button will hide it (unless it is blocking)
-		const { visible, blocking } = modalData
+		const { visible, blocking } = notification
 		if (visible) {
 			if (blocking !== true) {
 				this.handleModalDismiss()
@@ -114,15 +113,15 @@ class AppLayout extends Component {
 	}
 
 	render() {
-		const { isRehydrated, showLoading, loadingOpacity, modalData } = this.props
+		const { isRehydrated, isLoading, notification } = this.props
 		if (!isRehydrated) {
 			return <Loading active opacity={1} />
 		}
-		const { visible, onDismiss, ...modalProps } = modalData
+		const { visible, onDismiss, ...modalProps } = notification
 		return (
 			<View style={styles.container}>
 				<ReduxifiedAppNavigator ref={this.navigatorRef} />
-				<Loading active={showLoading} opacity={loadingOpacity} position="absolute" />
+				<Loading active={isLoading} opacity={1} position="absolute" />
 				<Modal visible={visible} {...modalProps} onDismiss={this.handleModalDismiss} />
 			</View>
 		)
