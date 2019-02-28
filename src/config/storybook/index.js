@@ -4,6 +4,8 @@ It loads every '.stories.js' file within 'src' folder (check config within 'pack
 All the stories are loaded within the file 'storybook/storyLoader'.
 To refresh this file you need to run 'yarn prestorybook'
 */
+import React from 'react'
+import { View } from 'react-native'
 import { getStorybookUI, configure } from '@storybook/react-native'
 import './rn-addons'
 import { loadStories } from './storyLoader' // file created dinamically
@@ -13,17 +15,24 @@ import '@modules/react-native-storybook/decorators/common'
 
 // import stories
 configure(() => {
-	// eslint-disable-next-line
-	if (__DEV__ && false) {
-		require('../components/SText/SText.stories')
-	} else {
-		require('./Welcome/Welcome.stories')
-		loadStories() // loads every '.stories.js' files within 'src' folder
-	}
+	require('./Welcome/Welcome.stories')
+	loadStories() // loads every '.stories.js' files within 'src' folder
 }, module)
 
 // Refer to https://github.com/storybooks/storybook/tree/master/app/react-native#start-command-parameters
 // To find allowed options for getStorybookUI
-const StorybookUIRoot = getStorybookUI({})
+
+// Fixed with black background, wrapper storybook
+// https://github.com/storybooks/storybook/issues/5628
+// https://github.com/storybooks/storybook/issues/5377
+function StorybookUIRoot() {
+	const StorybookUI = getStorybookUI({})
+	return (
+		// eslint-disable-next-line
+		<View style={{ backgroundColor: 'white', flex: 1 }}>
+			<StorybookUI />
+		</View>
+	)
+}
 
 export default StorybookUIRoot
