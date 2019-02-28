@@ -24,12 +24,14 @@ const config = {
 	version: APP_VERSION,
 	isDev,
 	isProd: !isDev,
+	isTest: process.env.NODE_ENV === 'test',
 	useReactotron: isDev,
 	disableWarningsYellowBox: false,
 	webUrl,
 	clientImageBaseUrl: `${webUrl}/c/`,
 	analyticsUA: ANALYTICS_UA,
 	api: {
+		isMocked: true,
 		config: {
 			baseURL: API_URL,
 			headers: {

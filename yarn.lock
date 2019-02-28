@@ -7892,9 +7892,9 @@ react-native-tab-view@^1.0.0, react-native-tab-view@^1.2.0:
   dependencies:
     prop-types "^15.6.1"
 
-"react-native-utils@https://github.com/Waavi/react-native-utils.git":
-  version "0.1.0"
-  resolved "https://github.com/Waavi/react-native-utils.git#5189064e20f64225a2716c6e509640ba1b6e85d4"
+"react-native-utils@https://github.com/Waavi/react-native-utils.git#0.1.1":
+  version "0.1.1"
+  resolved "https://github.com/Waavi/react-native-utils.git#69fdbe553b1995802c1f721796e5b0e3d801c596"
   dependencies:
     moment "^2.24.0"
 

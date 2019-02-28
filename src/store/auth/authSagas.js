@@ -47,7 +47,8 @@ export function* signin(api, { params }) {
 	} = params
 	yield put(AuthActions.setProvider(provider, socialAuthToken))
 	const { ok, data } = yield call(api.auth.signin, { id: email, password })
-	if (ok && data && data.token && data.minutes) {
+	console.tron.log([ok, data])
+	if (ok && data && data.token) {
 		// yield call(setAuthOnKeychain, params)
 		// yield call(setToken, data.token, data.minutes)
 

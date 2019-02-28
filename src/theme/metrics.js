@@ -1,7 +1,6 @@
-import { screen, ifIOS, getBottomSpace } from '@modules/platform'
 import { Platform } from 'react-native-utils'
 
-const { width, height } = screen
+const { width, height } = Platform.screen
 
 //Guideline sizes are based on standard ~5" screen mobile device
 // We'll use iphone resolution
@@ -35,6 +34,6 @@ export const Metrics = {
 	screenHeight: width < height ? height : width,
 	statusBarHeight: Platform.getStatusBarHeight(false),
 	statusBarSafeHeight: Platform.getStatusBarHeight(true),
-	navBarHeight: ifIOS(44, 54),
-	bottomSpace: getBottomSpace,
+	navBarHeight: Platform.ifIOS(44, 54),
+	bottomSpace: Platform.getBottomSpace,
 }
