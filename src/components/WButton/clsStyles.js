@@ -3,7 +3,7 @@ import { Fonts, Colors, Metrics } from '@/theme'
 import { marginClsStyles } from '@/theme/cls/spacingClsStyles'
 
 const clsStyles = ClsStyles.create({
-	mapping: { wrapper: null, view: null, text: null },
+	mapping: { wrapper: null, view: null, text: null, gradient: null },
 	styles: {
 		_base: {
 			wrapper: {},
@@ -12,7 +12,7 @@ const clsStyles = ClsStyles.create({
 				justifyContent: 'center',
 				alignItems: 'center',
 				borderRadius: 100,
-				backgroundColor: Colors.mediumgray,
+				backgroundColor: 'transparent',
 				paddingHorizontal: 1.5 * Metrics.grid.baseSpacing,
 				paddingVertical: Metrics.grid.baseSpacing,
 			},
@@ -23,6 +23,9 @@ const clsStyles = ClsStyles.create({
 				color: Colors.white,
 				includeFontPadding: false,
 				textAlignVertical: 'center',
+			},
+			gradient: {
+				borderRadius: 100,
 			},
 		},
 
