@@ -15,7 +15,7 @@
 		"ios-release": "react-native run-ios --configuration Release",
 		"android": "react-native run-android",
 		"link-fonts": "react-native link assets",
-		"storybook": "storybook start",
+		"storybook": "storybook start -c src/config/storybook",
 		"prestorybook": "rnstl",
 		"scripts-execution-permissions": "chmod u+x scripts/*",
 		"check-version": "scripts/version.sh",
@@ -30,7 +30,7 @@
 				"./src"
 			],
 			"pattern": "**/*.stories.js",
-			"outputFile": "./storybook/storyLoader.js"
+			"outputFile": "./src/config/storybook/storyLoader.js"
 		}
 	},
 	"rnpm": {

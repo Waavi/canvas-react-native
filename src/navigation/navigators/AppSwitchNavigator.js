@@ -2,7 +2,7 @@ import { createAppContainer, createSwitchNavigator } from 'react-navigation'
 import { BootstrapScreen } from '@/screens'
 import OnboardingStack from './OnboardingStack'
 import MainStack from './MainStack'
-import StorybookUI from '@/storybook'
+import StorybookUI from '@/config/storybook'
 
 const AppSwitchNavigator = createAppContainer(
 	createSwitchNavigator(
