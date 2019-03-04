@@ -8,6 +8,7 @@ import {
 	WEB_URL,
 	API_URL,
 	API_KEY,
+	API_IS_MOCKED,
 	ANALYTICS_UA,
 	REDUX_PERSIST_KEY,
 	REDUX_PERSIST_VERSION,
@@ -24,12 +25,14 @@ const config = {
 	version: APP_VERSION,
 	isDev,
 	isProd: !isDev,
+	isTest: process.env.NODE_ENV === 'test',
 	useReactotron: isDev,
 	disableWarningsYellowBox: false,
 	webUrl,
 	clientImageBaseUrl: `${webUrl}/c/`,
 	analyticsUA: ANALYTICS_UA,
 	api: {
+		isMocked: API_IS_MOCKED === 'true',
 		config: {
 			baseURL: API_URL,
 			headers: {
