@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from '#propTypes'
 import { TouchableOpacity } from 'react-native'
-import { SText } from '../SText'
+import { WText } from '../WText'
 
 LinkButton.propTypes = {
 	text: PropTypes.string.isRequired,
@@ -18,9 +18,9 @@ LinkButton.defaultProps = {
 export function LinkButton({ text, onPress, size, cls, style, ...restProps }) {
 	return (
 		<TouchableOpacity onPress={onPress} {...restProps}>
-			<SText size={size} cls={cls} style={style}>
+			<WText size={size} cls={cls} style={style}>
 				{text}
-			</SText>
+			</WText>
 		</TouchableOpacity>
 	)
 }

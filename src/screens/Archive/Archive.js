@@ -1,5 +1,5 @@
 import React from 'react'
-import { ScreenView, SText } from '@/components'
+import { ScreenView, WText } from '@/components'
 import { t } from '@/lang'
 
 ArchiveScreen.navigationOptions = () => ({
@@ -8,7 +8,7 @@ ArchiveScreen.navigationOptions = () => ({
 export function ArchiveScreen() {
 	return (
 		<ScreenView cls="col-center">
-			<SText size={20}>ArchiveScreen</SText>
+			<WText size={20}>ArchiveScreen</WText>
 		</ScreenView>
 	)
 }

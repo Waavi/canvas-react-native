@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from '#propTypes'
 import { View, StyleSheet } from 'react-native'
 import { Box } from './Box'
-import { SText } from '../SText'
+import { WText } from '../WText'
 import { Colors } from '@/theme'
 
 HrDivider.propTypes = {
@@ -16,7 +16,7 @@ export function HrDivider({ title, textSize = 'size16' }) {
 	return (
 		<Box cls="row-center mt-40 mb-20">
 			<View style={styles.line} />
-			<SText cls={`${textSize} black medium mx-s`}>{title}</SText>
+			<WText cls={`${textSize} black medium mx-s`}>{title}</WText>
 			<View style={styles.line} />
 		</Box>
 	)

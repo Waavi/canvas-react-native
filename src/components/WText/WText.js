@@ -29,11 +29,11 @@ const clsTextCreationParams = {
 		}
 	},
 }
-export const SText = createClsComponent({
+export const WText = createClsComponent({
 	component: Text,
 	...clsTextCreationParams,
 })
-export const STextAnimated = createClsComponent({
+export const WTextAnimated = createClsComponent({
 	component: Animated.Text,
 	...clsTextCreationParams,
 })

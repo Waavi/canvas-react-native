@@ -2,7 +2,7 @@
 import React, { PureComponent } from 'react'
 import { string, func, element, oneOfType, arrayOf } from 'prop-types'
 import { View, TouchableWithoutFeedback, StyleSheet } from 'react-native'
-import { Box, Icon, SText } from '@/components'
+import { Box, Icon, WText } from '@/components'
 import { Colors } from '@/theme'
 
 export class FormGroupSignin extends PureComponent {
@@ -24,9 +24,9 @@ export class FormGroupSignin extends PureComponent {
 						)}
 						<Box cls="flex-1">{children}</Box>
 					</Box>
-					<SText cls="error size12" numberOfLines={1} style={styles.error}>
+					<WText cls="error size12" numberOfLines={1} style={styles.error}>
 						{error || ' '}
-					</SText>
+					</WText>
 				</View>
 			</TouchableWithoutFeedback>
 		)

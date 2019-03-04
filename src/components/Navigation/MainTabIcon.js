@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from '#propTypes'
 import { View, StyleSheet } from 'react-native'
-import { Box, SText } from '@/components'
+import { Box, WText } from '@/components'
 import { Colors, Metrics, BasicStyles } from '@/theme'
 import { t } from '@/lang'
 
@@ -22,9 +22,9 @@ export function MainTabIcon({ name, withAlert, tintColor }) {
 			style={[styles.container, withAlert ? styles.containerWithAlert : {}]}
 		>
 			{/* <Icon name={name} size={22} color={tintColor} /> */}
-			<SText size={16} style={{ color: tintColor }}>
+			<WText size={16} style={{ color: tintColor }}>
 				{t(`nav.tabs.${name}`)}
-			</SText>
+			</WText>
 			{withAlert && (
 				<View style={styles.alertContainer}>
 					<View style={styles.alert} />

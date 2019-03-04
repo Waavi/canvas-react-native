@@ -11,7 +11,7 @@ function loadStories() {
 	require('../../components/WLinearGradient/WLinearGradient.stories')
 	require('../../components/Loading/Loading.stories')
 	require('../../components/Modal/Modal.stories')
-	require('../../components/SText/SText.stories')
+	require('../../components/WText/WText.stories')
 }
 
 const stories = [
@@ -21,7 +21,7 @@ const stories = [
 	'../../components/WLinearGradient/WLinearGradient.stories',
 	'../../components/Loading/Loading.stories',
 	'../../components/Modal/Modal.stories',
-	'../../components/SText/SText.stories',
+	'../../components/WText/WText.stories',
 ]
 
 module.exports = {

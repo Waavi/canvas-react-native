@@ -4,7 +4,7 @@ import PropTypes from '#propTypes'
 import { BasicStyles, Colors } from '@/theme'
 import { Backdrop } from './components/Backdrop'
 import { ModalButtons } from './components/ModalButtons'
-import { SText } from '../SText'
+import { WText } from '../WText'
 import { Icon } from '../Icon'
 
 Modal.propTypes = {
@@ -66,14 +66,14 @@ export function Modal({
 					)}
 					{image && <Image source={image} style={imageStyle} />}
 					{title && (
-						<SText size={20} cls="medium center mb-s">
+						<WText size={20} cls="medium center mb-s">
 							{title}
-						</SText>
+						</WText>
 					)}
 					{text && (
-						<SText size={16} cls="center mb-s">
+						<WText size={16} cls="center mb-s">
 							{text}
-						</SText>
+						</WText>
 					)}
 					{children}
 					<ModalButtons

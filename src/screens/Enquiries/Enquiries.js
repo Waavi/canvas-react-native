@@ -1,5 +1,5 @@
 import React from 'react'
-import { ScreenView, SText } from '@/components'
+import { ScreenView, WText } from '@/components'
 import { t } from '@/lang'
 
 EnquiriesScreen.navigationOptions = () => ({
@@ -8,7 +8,7 @@ EnquiriesScreen.navigationOptions = () => ({
 export function EnquiriesScreen() {
 	return (
 		<ScreenView cls="col-center">
-			<SText size={20}>EnquiriesScreen</SText>
+			<WText size={20}>EnquiriesScreen</WText>
 		</ScreenView>
 	)
 }
