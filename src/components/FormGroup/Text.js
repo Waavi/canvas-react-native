@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import React, { PureComponent } from 'react'
-import { string } from 'prop-types'
+import PropTypes from 'prop-types'
 import { Field } from 'redux-form'
 import { TextInput } from 'react-native'
 import { t } from '@/lang'
@@ -10,10 +10,10 @@ import { formStyles, placeholderColor } from './formStyles'
 
 export class Text extends PureComponent {
 	static propTypes = {
-		name: string.isRequired,
-		label: string.isRequired,
-		placeholder: string,
-		textAlign: string,
+		name: PropTypes.string.isRequired,
+		label: PropTypes.string.isRequired,
+		placeholder: PropTypes.string,
+		textAlign: PropTypes.string,
 	}
 	static defaultProps = {
 		textAlign: 'right',
@@ -50,7 +50,7 @@ export class Text extends PureComponent {
 					ref={this.setRef}
 					value={value}
 					onChangeText={onChange}
-					placeholder={placeholder && t(placeholder)}
+					placeholder={placeholder}
 					textAlign={textAlign}
 					style={[formStyles.inputText, { alignSelf: 'stretch' }, style]}
 					placeholderTextColor={placeholderColor}

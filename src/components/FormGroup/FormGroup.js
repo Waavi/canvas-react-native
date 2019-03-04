@@ -1,20 +1,20 @@
 /* eslint-disable */
 import React, { PureComponent } from 'react'
-import { bool, string, number, func, element, oneOfType, arrayOf } from 'prop-types'
+import PropTypes from 'prop-types'
 import { StyleSheet, TouchableWithoutFeedback } from 'react-native'
-import { Box, WText } from '@/components'
+import { Box } from '@/components/Layout'
+import { WText } from '@/components/WText'
 import { Metrics } from '@/theme'
-import { t } from '@/lang'
 
 export class FormGroup extends PureComponent {
 	static propTypes = {
-		CustomFormGroup: element,
-		label: string.isRequired,
-		error: string,
-		minHeight: number,
-		labelMaxWidth: number,
-		onPress: func,
-		children: oneOfType([element, arrayOf(element)]),
+		CustomFormGroup: PropTypes.element,
+		label: PropTypes.string.isRequired,
+		error: PropTypes.string,
+		minHeight: PropTypes.number,
+		labelMaxWidth: PropTypes.number,
+		onPress: PropTypes.func,
+		children: PropTypes.oneOfType([PropTypes.element, PropTypes.arrayOf(PropTypes.element)]),
 	}
 	static defaultProps = {
 		minHeight: 70,
@@ -37,19 +37,21 @@ export class FormGroup extends PureComponent {
 		return (
 			<TouchableWithoutFeedback onPress={onPress}>
 				<Box
-					cls="row-stretch-center white px-s b-b"
+					cls="row-stretch-center px-s b-b"
 					style={{ minHeight: Metrics.scale.vertical(minHeight) }}
 				>
 					<WText
-						cls="mr-s size14 bold label"
+						cls="mr-s bold label"
+						size={14}
 						style={{ maxWidth: Metrics.scale.percentage.horizontal(labelMaxWidth) }}
 					>
-						{t(label)}
+						{label}
 					</WText>
 					<Box cls="flex-1 col-center-right">{children}</Box>
 					{error && (
 						<WText
-							cls="error size12 right px-s pb-5"
+							cls="error right px-s pb-5"
+							size={12}
 							numberOfLines={1}
 							style={styles.error}
 						>

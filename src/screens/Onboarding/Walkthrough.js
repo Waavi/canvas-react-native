@@ -22,7 +22,18 @@ export class WalkthroughScreen extends Component {
 		return (
 			<ScreenView scrollable color="white" cls="col-stretch-center pt-3s px-s pb-s">
 				<Icon name="card" />
-				<Button text="signin" textAlign="center" toUpper onPress={() => forceLogin()} />
+				<Button
+					text="signin"
+					textAlign="center"
+					toUpper
+					onPress={() => navigation.navigate('Signin')}
+				/>
+				<Button
+					text="force login"
+					textAlign="center"
+					toUpper
+					onPress={() => forceLogin()}
+				/>
 				<Button
 					text="test modal"
 					textAlign="center"
