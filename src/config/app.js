@@ -14,7 +14,7 @@ import {
 	REDUX_PERSIST_VERSION,
 	REDUX_PERSIST_ACTIVE,
 	STORYBOOK_SHOW,
-} from 'react-native-dotenv' /* ___timestamp___2019-02-28___09:51:22___ */
+} from 'react-native-dotenv' /* ___timestamp___2019-02-28___10:38:14___ */
 
 const webUrl = WEB_URL
 
