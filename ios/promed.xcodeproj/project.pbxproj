@@ -57,7 +57,7 @@
 		3E519118221EC44A00935FAA /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E519109221EC44A00935FAA /* EvilIcons.ttf */; };
 		3E519119221EC44A00935FAA /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E51910A221EC44A00935FAA /* SimpleLineIcons.ttf */; };
 		3E51911A221EC44A00935FAA /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E51910B221EC44A00935FAA /* MaterialIcons.ttf */; };
-		3E9DAF3A2227E1E3005AF049 /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E9DAF0E2227E1BE005AF049 /* libBVLinearGradient.a */; };
+		3E5C8614222E64B000059F7D /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E9DAF0E2227E1BE005AF049 /* libBVLinearGradient.a */; };
 		51F48029C05341E8815459CB /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED9CE5BD05934AA9B655184C /* Montserrat-Bold.ttf */; };
 		78427DF3D1F24810A2FD2727 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17A91DFAEEB5421BAB2ECF4B /* Montserrat-Light.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
@@ -462,7 +462,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E9DAF3A2227E1E3005AF049 /* libBVLinearGradient.a in Frameworks */,
+				3E5C8614222E64B000059F7D /* libBVLinearGradient.a in Frameworks */,
 				3E5190FB221EC2B400935FAA /* libRNLanguages.a in Frameworks */,
 				ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,

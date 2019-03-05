@@ -1,5 +1,5 @@
 import ClsStyles from '@modules/react-native-cls'
-import { Fonts, Colors, Metrics } from '@/theme'
+import { Fonts, Colors, Metrics, BasicStyles } from '@/theme'
 import { marginClsStyles } from '@/theme/cls/spacingClsStyles'
 
 const clsStyles = ClsStyles.create({
@@ -15,9 +15,10 @@ const clsStyles = ClsStyles.create({
 				backgroundColor: 'transparent',
 				paddingHorizontal: 1.5 * Metrics.grid.baseSpacing,
 				paddingVertical: Metrics.grid.baseSpacing,
+				...BasicStyles.shadow.button,
 			},
 			text: {
-				fontSize: Fonts.size[14],
+				fontSize: Fonts.size[16],
 				fontFamily: Fonts.type.medium,
 				backgroundColor: 'transparent',
 				color: Colors.white,
@@ -28,10 +29,16 @@ const clsStyles = ClsStyles.create({
 				borderRadius: 100,
 			},
 		},
-
+		disabled: {
+			view: { backgroundColor: Colors.lightgray },
+			text: { color: Colors.white },
+			gradient: null,
+		},
+		// Colors
 		green: {
 			view: { backgroundColor: Colors.green },
 			text: { color: Colors.black },
+			gradient: null,
 		},
 		white: {
 			view: {
@@ -40,13 +47,16 @@ const clsStyles = ClsStyles.create({
 				backgroundColor: Colors.white,
 			},
 			text: { color: Colors.black },
+			gradient: null,
 		},
 		dark: {
 			view: { backgroundColor: Colors.dark },
+			gradient: null,
 		},
 		'dark-light': {
 			view: { backgroundColor: Colors.darkgray },
-			text: { color: Colors.dark },
+			text: { color: Colors.white },
+			gradient: null,
 		},
 		'dark-outline': {
 			view: {
@@ -55,12 +65,14 @@ const clsStyles = ClsStyles.create({
 				borderColor: Colors.white,
 			},
 			text: { fontSize: Fonts.size[13] },
+			gradient: null,
 		},
 		yellow: {
 			view: { backgroundColor: Colors.yellow },
 			text: { color: Colors.black },
+			gradient: null,
 		},
-
+		// Sizes
 		small: {
 			view: {
 				paddingHorizontal: 1.5 * Metrics.grid.baseSpacing,
@@ -76,7 +88,7 @@ const clsStyles = ClsStyles.create({
 			},
 			text: { fontSize: Fonts.size[14] },
 		},
-
+		// Align
 		center: {
 			wrapper: { alignSelf: 'center' },
 			view: { alignSelf: 'center' },

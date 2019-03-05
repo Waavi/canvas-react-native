@@ -99,11 +99,24 @@ const boldShadow = {
 	elevation: 5,
 	backgroundColor: Colors.white,
 }
+const buttonShadow = {
+	shadowColor: 'rgba(77, 161, 223, 0.2)',
+	shadowOffset: {
+		width: 0,
+		height: 4,
+	},
+	shadowRadius: 8,
+	shadowOpacity: 1,
+	overflow: 'visible',
+	elevation: 3,
+	backgroundColor: 'transparent',
+}
 
 const ShadowStyles = {
 	shadow: {
 		default: defaultShadow,
 		bold: boldShadow,
+		button: buttonShadow,
 	},
 }
 
