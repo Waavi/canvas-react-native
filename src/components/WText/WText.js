@@ -7,13 +7,14 @@ import clsStyles from './clsStyles'
 const clsTextCreationParams = {
 	clsStyles,
 	propTypes: {
-		size: PropTypes.number.isRequired,
+		size: PropTypes.number,
 		lineHeight: PropTypes.number,
 		scaled: PropTypes.bool,
 		// eslint-disable-next-line react/forbid-foreign-prop-types
 		style: PropTypes.textStyle,
 	},
 	defaultProps: {
+		size: 16,
 		lineHeight: undefined,
 		scaled: false,
 		style: undefined,
