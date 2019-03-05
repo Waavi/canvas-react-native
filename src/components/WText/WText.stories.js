@@ -13,8 +13,8 @@ storiesOf('WText', module)
 		const scaled = boolean('Scaled', true)
 		return (
 			<StoryView align="stretch" padded>
-				{fontSizes.map((size, index) => (
-					<View style={styles.wrapper} key={`example-${index}`}>
+				{fontSizes.map(size => (
+					<View style={styles.wrapper} key={`example-${size}`}>
 						<WText size={size} scaled={scaled}>{`WText with size ${size}`}</WText>
 					</View>
 				))}

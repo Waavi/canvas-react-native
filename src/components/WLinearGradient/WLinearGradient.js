@@ -9,6 +9,7 @@ WLinearGradient.propTypes = {
 	direction: PropTypes.oneOf([...DirectionsKeys, '']),
 	color: PropTypes.oneOf('primary', 'secondary', 'tertiary'),
 	colors: PropTypes.arrayOf(PropTypes.string),
+	style: PropTypes.style,
 	start: PropTypes.shape({
 		x: Number,
 		y: Number,
@@ -31,6 +32,7 @@ WLinearGradient.defaultProps = {
 	start: Directions.vertical.start,
 	end: Directions.vertical.end,
 	children: undefined,
+	style: undefined,
 }
 
 export function WLinearGradient({ direction, color, colors, start, end, style, children }) {
