@@ -9,12 +9,12 @@ import { WText } from './WText'
 
 storiesOf('WText', module)
 	.add('font sizes', () => {
-		const fontSizes = [10, 12, 14, 16, 18, 20, 24, 28, 35]
+		const fontSizes = [undefined, 10, 12, 14, 16, 18, 20, 24, 28, 35]
 		const scaled = boolean('Scaled', true)
 		return (
 			<StoryView align="stretch" padded>
-				{fontSizes.map(size => (
-					<View key={size} style={styles.wrapper}>
+				{fontSizes.map((size, index) => (
+					<View style={styles.wrapper} key={`example-${index}`}>
 						<WText size={size} scaled={scaled}>{`WText with size ${size}`}</WText>
 					</View>
 				))}
