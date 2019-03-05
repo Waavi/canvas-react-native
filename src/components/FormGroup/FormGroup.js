@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
-import { StyleSheet, TouchableWithoutFeedback } from 'react-native'
+import { View, StyleSheet, TouchableWithoutFeedback } from 'react-native'
 import { Box } from '@/components/Layout'
 import { WText } from '@/components/WText'
 import { Metrics } from '@/theme'
@@ -17,7 +17,7 @@ export class FormGroup extends PureComponent {
 		children: PropTypes.oneOfType([PropTypes.element, PropTypes.arrayOf(PropTypes.element)]),
 	}
 	static defaultProps = {
-		minHeight: 70,
+		minHeight: 40,
 		labelMaxWidth: 50,
 	}
 
@@ -36,21 +36,23 @@ export class FormGroup extends PureComponent {
 		}
 		return (
 			<TouchableWithoutFeedback onPress={onPress}>
-				<Box
-					cls="row-stretch-center px-s b-b"
-					style={{ minHeight: Metrics.scale.vertical(minHeight) }}
-				>
-					<WText
-						cls="mr-s bold label"
-						size={14}
-						style={{ maxWidth: Metrics.scale.percentage.horizontal(labelMaxWidth) }}
+				<View style={styles.wrapper}>
+					<Box
+						cls="mb-10 px-s b-b"
+						style={{ minHeight: Metrics.scale.vertical(minHeight) }}
 					>
-						{label}
-					</WText>
-					<Box cls="flex-1 col-center-right">{children}</Box>
+						<WText
+							cls="mb-5 bold label"
+							size={14}
+							style={{ maxWidth: Metrics.scale.percentage.horizontal(labelMaxWidth) }}
+						>
+							{label}
+						</WText>
+						<Box>{children}</Box>
+					</Box>
 					{error && (
 						<WText
-							cls="error right px-s pb-5"
+							cls="error px-s pb-5"
 							size={12}
 							numberOfLines={1}
 							style={styles.error}
@@ -58,13 +60,17 @@ export class FormGroup extends PureComponent {
 							{error}
 						</WText>
 					)}
-				</Box>
+				</View>
 			</TouchableWithoutFeedback>
 		)
 	}
 }
 
 const styles = StyleSheet.create({
+	wrapper: {
+		marginBottom: 10,
+		paddingBottom: 15,
+	},
 	error: {
 		position: 'absolute',
 		left: 0,

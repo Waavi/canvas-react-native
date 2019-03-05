@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
 import { func, shape } from 'prop-types'
 import { connect } from 'react-redux'
-import { reduxForm } from 'redux-form'
 import { AuthActions, NotificationsActions } from '#actions'
-import { ScreenView, WText, FG, Button } from '@/components'
-import { emailValidation } from '@/utils/validation'
+import { ScreenView, WText, Button } from '@/components'
 
 @connect(
 	null,
@@ -13,14 +11,13 @@ import { emailValidation } from '@/utils/validation'
 		showNotificationInfo: NotificationsActions.showNotificationInfo,
 	}
 )
-@reduxForm({ form: 'signinForm' })
 export class SigninScreen extends Component {
 	static propTypes = {
 		showNotificationInfo: func.isRequired,
 		signin: func.isRequired,
 		navigation: shape({ navigate: func.isRequired }).isRequired,
 	}
-	submit = () => this.props.handleSubmit(form => console.tron.log(form))()
+	submit = () => console.tron.log('Sigin')
 
 	render() {
 		// const {  } = this.props
@@ -29,10 +26,7 @@ export class SigninScreen extends Component {
 				<WText size={20} cls="medium center mb-s">
 					Signin
 				</WText>
-
-				<FG.Text name="email" label="email" validate={[emailValidation]} />
-
-				<Button cls="" text="sign in!" onPress={this.submit} disabled={!this.props.dirty} />
+				<Button cls="" text="sign in!" onPress={this.submit} />
 			</ScreenView>
 		)
 	}

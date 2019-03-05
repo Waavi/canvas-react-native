@@ -16,7 +16,7 @@ export class Text extends PureComponent {
 		textAlign: PropTypes.string,
 	}
 	static defaultProps = {
-		textAlign: 'right',
+		textAlign: 'left',
 	}
 
 	setRef = ref => {

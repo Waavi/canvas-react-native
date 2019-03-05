@@ -54,7 +54,7 @@ export const Colors = {
 		darkestgray: basics.darkestgray,
 		darkgray: basics.darkgray,
 		secondary: basics.mediumgray,
-		label: basics.mediumgray,
+		label: basics.lightgray,
 		hint: basics.lightgray,
 		'hint-dark': basics.darkgray,
 		white: basics.white,

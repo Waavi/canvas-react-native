@@ -6,12 +6,21 @@ To refresh this file you need to run 'yarn prestorybook'
 */
 import React from 'react'
 import { View } from 'react-native'
-import { getStorybookUI, configure } from '@storybook/react-native'
+import { getStorybookUI, configure, addParameters } from '@storybook/react-native'
 import './rn-addons'
 import { loadStories } from './storyLoader' // file created dinamically
+import theme from './theme'
 
 // add every common decorator used for every story
 import '@modules/react-native-storybook/decorators/common'
+
+//Add parameters
+addParameters({
+	options: {
+		name: 'Foo',
+		theme,
+	},
+})
 
 // import stories
 configure(() => {

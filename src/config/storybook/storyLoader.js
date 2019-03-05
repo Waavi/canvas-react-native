@@ -12,6 +12,8 @@ function loadStories() {
 	require('../../components/Loading/Loading.stories')
 	require('../../components/Modal/Modal.stories')
 	require('../../components/WText/WText.stories')
+	require('../../components/FormGroup/Text.stories')
+	require('../../components/FormGroup/Checkbox.stories')
 }
 
 const stories = [
@@ -22,6 +24,8 @@ const stories = [
 	'../../components/Loading/Loading.stories',
 	'../../components/Modal/Modal.stories',
 	'../../components/WText/WText.stories',
+	'../../components/FormGroup/Text.stories',
+	'../../components/FormGroup/Checkbox.stories',
 ]
 
 module.exports = {
