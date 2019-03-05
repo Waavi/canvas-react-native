@@ -1,0 +1,1266 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components/WText should have a "class" for each font family defined at Fonts catalog 1`] = `
+<View>
+  <View>
+    <_class
+      cls="Montserrat-Thin"
+      key="thin"
+      scaled={false}
+      size={16}
+    >
+      <Text
+        scaled={false}
+        size={16}
+        style={
+          Array [
+            undefined,
+            Object {
+              "backgroundColor": "transparent",
+              "color": "#222",
+              "fontFamily": "Montserrat-Regular",
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            Object {
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          scaled={false}
+          size={16}
+          style={
+            Array [
+              undefined,
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Montserrat-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          test
+        </Text>
+      </Text>
+    </_class>
+    <_class
+      cls="Montserrat-ExtraLight"
+      key="extralight"
+      scaled={false}
+      size={16}
+    >
+      <Text
+        scaled={false}
+        size={16}
+        style={
+          Array [
+            undefined,
+            Object {
+              "backgroundColor": "transparent",
+              "color": "#222",
+              "fontFamily": "Montserrat-Regular",
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            Object {
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          scaled={false}
+          size={16}
+          style={
+            Array [
+              undefined,
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Montserrat-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          test
+        </Text>
+      </Text>
+    </_class>
+    <_class
+      cls="Montserrat-Light"
+      key="light"
+      scaled={false}
+      size={16}
+    >
+      <Text
+        scaled={false}
+        size={16}
+        style={
+          Array [
+            undefined,
+            Object {
+              "backgroundColor": "transparent",
+              "color": "#222",
+              "fontFamily": "Montserrat-Regular",
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            Object {
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          scaled={false}
+          size={16}
+          style={
+            Array [
+              undefined,
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Montserrat-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          test
+        </Text>
+      </Text>
+    </_class>
+    <_class
+      cls="Montserrat-Regular"
+      key="regular"
+      scaled={false}
+      size={16}
+    >
+      <Text
+        scaled={false}
+        size={16}
+        style={
+          Array [
+            undefined,
+            Object {
+              "backgroundColor": "transparent",
+              "color": "#222",
+              "fontFamily": "Montserrat-Regular",
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            Object {
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          scaled={false}
+          size={16}
+          style={
+            Array [
+              undefined,
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Montserrat-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          test
+        </Text>
+      </Text>
+    </_class>
+    <_class
+      cls="Montserrat-Medium"
+      key="medium"
+      scaled={false}
+      size={16}
+    >
+      <Text
+        scaled={false}
+        size={16}
+        style={
+          Array [
+            undefined,
+            Object {
+              "backgroundColor": "transparent",
+              "color": "#222",
+              "fontFamily": "Montserrat-Regular",
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            Object {
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          scaled={false}
+          size={16}
+          style={
+            Array [
+              undefined,
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Montserrat-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          test
+        </Text>
+      </Text>
+    </_class>
+    <_class
+      cls="Montserrat-SemiBold"
+      key="semibold"
+      scaled={false}
+      size={16}
+    >
+      <Text
+        scaled={false}
+        size={16}
+        style={
+          Array [
+            undefined,
+            Object {
+              "backgroundColor": "transparent",
+              "color": "#222",
+              "fontFamily": "Montserrat-Regular",
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            Object {
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          scaled={false}
+          size={16}
+          style={
+            Array [
+              undefined,
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Montserrat-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          test
+        </Text>
+      </Text>
+    </_class>
+    <_class
+      cls="Montserrat-Bold"
+      key="bold"
+      scaled={false}
+      size={16}
+    >
+      <Text
+        scaled={false}
+        size={16}
+        style={
+          Array [
+            undefined,
+            Object {
+              "backgroundColor": "transparent",
+              "color": "#222",
+              "fontFamily": "Montserrat-Regular",
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            Object {
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          scaled={false}
+          size={16}
+          style={
+            Array [
+              undefined,
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Montserrat-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          test
+        </Text>
+      </Text>
+    </_class>
+    <_class
+      cls="Montserrat-Regular"
+      key="italic"
+      scaled={false}
+      size={16}
+    >
+      <Text
+        scaled={false}
+        size={16}
+        style={
+          Array [
+            undefined,
+            Object {
+              "backgroundColor": "transparent",
+              "color": "#222",
+              "fontFamily": "Montserrat-Regular",
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            Object {
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          scaled={false}
+          size={16}
+          style={
+            Array [
+              undefined,
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Montserrat-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          test
+        </Text>
+      </Text>
+    </_class>
+    <_class
+      cls="VarelaRound-Regular"
+      key="varela"
+      scaled={false}
+      size={16}
+    >
+      <Text
+        scaled={false}
+        size={16}
+        style={
+          Array [
+            undefined,
+            Object {
+              "backgroundColor": "transparent",
+              "color": "#222",
+              "fontFamily": "Montserrat-Regular",
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            Object {
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          scaled={false}
+          size={16}
+          style={
+            Array [
+              undefined,
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Montserrat-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          test
+        </Text>
+      </Text>
+    </_class>
+  </View>
+</View>
+`;
+
+exports[`Components/WText should have a "class" for each font size defined at Fonts catalog 1`] = `
+<View>
+  <View>
+    <_class
+      cls={8}
+      key="8"
+      scaled={false}
+      size={16}
+    >
+      <Text
+        scaled={false}
+        size={16}
+        style={
+          Array [
+            undefined,
+            Object {
+              "backgroundColor": "transparent",
+              "color": "#222",
+              "fontFamily": "Montserrat-Regular",
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            Object {
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          scaled={false}
+          size={16}
+          style={
+            Array [
+              undefined,
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Montserrat-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          test
+        </Text>
+      </Text>
+    </_class>
+    <_class
+      cls={9}
+      key="9"
+      scaled={false}
+      size={16}
+    >
+      <Text
+        scaled={false}
+        size={16}
+        style={
+          Array [
+            undefined,
+            Object {
+              "backgroundColor": "transparent",
+              "color": "#222",
+              "fontFamily": "Montserrat-Regular",
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            Object {
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          scaled={false}
+          size={16}
+          style={
+            Array [
+              undefined,
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Montserrat-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          test
+        </Text>
+      </Text>
+    </_class>
+    <_class
+      cls={10}
+      key="10"
+      scaled={false}
+      size={16}
+    >
+      <Text
+        scaled={false}
+        size={16}
+        style={
+          Array [
+            undefined,
+            Object {
+              "backgroundColor": "transparent",
+              "color": "#222",
+              "fontFamily": "Montserrat-Regular",
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            Object {
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          scaled={false}
+          size={16}
+          style={
+            Array [
+              undefined,
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Montserrat-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          test
+        </Text>
+      </Text>
+    </_class>
+    <_class
+      cls={11}
+      key="11"
+      scaled={false}
+      size={16}
+    >
+      <Text
+        scaled={false}
+        size={16}
+        style={
+          Array [
+            undefined,
+            Object {
+              "backgroundColor": "transparent",
+              "color": "#222",
+              "fontFamily": "Montserrat-Regular",
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            Object {
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          scaled={false}
+          size={16}
+          style={
+            Array [
+              undefined,
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Montserrat-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          test
+        </Text>
+      </Text>
+    </_class>
+    <_class
+      cls={12}
+      key="12"
+      scaled={false}
+      size={16}
+    >
+      <Text
+        scaled={false}
+        size={16}
+        style={
+          Array [
+            undefined,
+            Object {
+              "backgroundColor": "transparent",
+              "color": "#222",
+              "fontFamily": "Montserrat-Regular",
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            Object {
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          scaled={false}
+          size={16}
+          style={
+            Array [
+              undefined,
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Montserrat-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          test
+        </Text>
+      </Text>
+    </_class>
+    <_class
+      cls={14}
+      key="14"
+      scaled={false}
+      size={16}
+    >
+      <Text
+        scaled={false}
+        size={16}
+        style={
+          Array [
+            undefined,
+            Object {
+              "backgroundColor": "transparent",
+              "color": "#222",
+              "fontFamily": "Montserrat-Regular",
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            Object {
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          scaled={false}
+          size={16}
+          style={
+            Array [
+              undefined,
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Montserrat-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          test
+        </Text>
+      </Text>
+    </_class>
+    <_class
+      cls={16}
+      key="16"
+      scaled={false}
+      size={16}
+    >
+      <Text
+        scaled={false}
+        size={16}
+        style={
+          Array [
+            undefined,
+            Object {
+              "backgroundColor": "transparent",
+              "color": "#222",
+              "fontFamily": "Montserrat-Regular",
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            Object {
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          scaled={false}
+          size={16}
+          style={
+            Array [
+              undefined,
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Montserrat-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          test
+        </Text>
+      </Text>
+    </_class>
+    <_class
+      cls={18}
+      key="18"
+      scaled={false}
+      size={16}
+    >
+      <Text
+        scaled={false}
+        size={16}
+        style={
+          Array [
+            undefined,
+            Object {
+              "backgroundColor": "transparent",
+              "color": "#222",
+              "fontFamily": "Montserrat-Regular",
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            Object {
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          scaled={false}
+          size={16}
+          style={
+            Array [
+              undefined,
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Montserrat-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          test
+        </Text>
+      </Text>
+    </_class>
+  </View>
+</View>
+`;
+
+exports[`Components/WText should have the "classes": "title", "text", ... 1`] = `
+<View>
+  <View>
+    <_class
+      cls="title"
+      key="title"
+      scaled={false}
+      size={16}
+    >
+      <Text
+        scaled={false}
+        size={16}
+        style={
+          Array [
+            undefined,
+            Object {
+              "backgroundColor": "transparent",
+              "color": "#222",
+              "fontFamily": "Montserrat-Regular",
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            Object {
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          scaled={false}
+          size={16}
+          style={
+            Array [
+              undefined,
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Montserrat-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          test
+        </Text>
+      </Text>
+    </_class>
+    <_class
+      cls="text"
+      key="text"
+      scaled={false}
+      size={16}
+    >
+      <Text
+        scaled={false}
+        size={16}
+        style={
+          Array [
+            undefined,
+            Object {
+              "backgroundColor": "transparent",
+              "color": "#222",
+              "fontFamily": "Montserrat-Regular",
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            Object {
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          scaled={false}
+          size={16}
+          style={
+            Array [
+              undefined,
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Montserrat-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          test
+        </Text>
+      </Text>
+    </_class>
+    <_class
+      cls="grow"
+      key="grow"
+      scaled={false}
+      size={16}
+    >
+      <Text
+        scaled={false}
+        size={16}
+        style={
+          Array [
+            undefined,
+            Object {
+              "backgroundColor": "transparent",
+              "color": "#222",
+              "fontFamily": "Montserrat-Regular",
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            Object {
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          scaled={false}
+          size={16}
+          style={
+            Array [
+              undefined,
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Montserrat-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          test
+        </Text>
+      </Text>
+    </_class>
+    <_class
+      cls="left"
+      key="left"
+      scaled={false}
+      size={16}
+    >
+      <Text
+        scaled={false}
+        size={16}
+        style={
+          Array [
+            undefined,
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Montserrat-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "textAlign": "left",
+              },
+            ],
+            Object {
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          scaled={false}
+          size={16}
+          style={
+            Array [
+              undefined,
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "#222",
+                  "fontFamily": "Montserrat-Regular",
+                  "fontSize": 16,
+                  "lineHeight": 20,
+                },
+                Object {
+                  "textAlign": "left",
+                },
+              ],
+              Object {
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          test
+        </Text>
+      </Text>
+    </_class>
+    <_class
+      cls="center"
+      key="center"
+      scaled={false}
+      size={16}
+    >
+      <Text
+        scaled={false}
+        size={16}
+        style={
+          Array [
+            undefined,
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Montserrat-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "textAlign": "center",
+              },
+            ],
+            Object {
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          scaled={false}
+          size={16}
+          style={
+            Array [
+              undefined,
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "#222",
+                  "fontFamily": "Montserrat-Regular",
+                  "fontSize": 16,
+                  "lineHeight": 20,
+                },
+                Object {
+                  "textAlign": "center",
+                },
+              ],
+              Object {
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          test
+        </Text>
+      </Text>
+    </_class>
+    <_class
+      cls="right"
+      key="right"
+      scaled={false}
+      size={16}
+    >
+      <Text
+        scaled={false}
+        size={16}
+        style={
+          Array [
+            undefined,
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Montserrat-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "textAlign": "right",
+              },
+            ],
+            Object {
+              "fontSize": 16,
+              "lineHeight": 20,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          scaled={false}
+          size={16}
+          style={
+            Array [
+              undefined,
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "#222",
+                  "fontFamily": "Montserrat-Regular",
+                  "fontSize": 16,
+                  "lineHeight": 20,
+                },
+                Object {
+                  "textAlign": "right",
+                },
+              ],
+              Object {
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          test
+        </Text>
+      </Text>
+    </_class>
+  </View>
+</View>
+`;
+
+exports[`Components/WText should set a base style 1`] = `
+Array [
+  undefined,
+  Object {
+    "backgroundColor": "transparent",
+    "color": "#222",
+    "fontFamily": "Montserrat-Regular",
+    "fontSize": 16,
+    "lineHeight": 20,
+  },
+  Object {
+    "fontSize": 16,
+    "lineHeight": 20,
+  },
+  undefined,
+]
+`;
