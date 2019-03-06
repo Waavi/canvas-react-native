@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { func, shape } from 'prop-types'
+import { func } from 'prop-types'
 import { connect } from 'react-redux'
 import { AuthActions, NotificationsActions } from '#actions'
 import { ScreenView, WText, Button } from '@/components'
@@ -13,11 +13,17 @@ import { ScreenView, WText, Button } from '@/components'
 )
 export class SigninScreen extends Component {
 	static propTypes = {
-		showNotificationInfo: func.isRequired,
-		signin: func.isRequired,
-		navigation: shape({ navigate: func.isRequired }).isRequired,
+		signin: func,
 	}
-	submit = () => console.tron.log('Sigin')
+
+	static defaultProps = {
+		signin: undefined,
+	}
+
+	handleSubmit = () => {
+		const { signin } = this.props
+		signin()
+	}
 
 	render() {
 		// const {  } = this.props
@@ -26,7 +32,7 @@ export class SigninScreen extends Component {
 				<WText size={20} cls="medium center mb-s">
 					Signin
 				</WText>
-				<Button cls="" text="sign in!" onPress={this.submit} />
+				<Button cls="" text="sign in!" onPress={this.handleSubmit} />
 			</ScreenView>
 		)
 	}

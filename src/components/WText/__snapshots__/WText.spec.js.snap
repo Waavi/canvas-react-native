@@ -160,8 +160,8 @@ exports[`Components/WText should have a "class" for each font family defined at 
       </Text>
     </_class>
     <_class
-      cls="Ubuntu-Regular"
-      key="regular"
+      cls="Ubuntu-Medium"
+      key="medium"
       scaled={false}
       size={16}
     >
@@ -212,8 +212,8 @@ exports[`Components/WText should have a "class" for each font family defined at 
       </Text>
     </_class>
     <_class
-      cls="Ubuntu-Medium"
-      key="medium"
+      cls="Ubuntu-Regular"
+      key="regular"
       scaled={false}
       size={16}
     >
