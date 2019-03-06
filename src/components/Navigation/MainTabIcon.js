@@ -21,7 +21,7 @@ export function MainTabIcon({ name, withAlert, tintColor }) {
 			cls="flex-1 center"
 			style={[styles.container, withAlert ? styles.containerWithAlert : {}]}
 		>
-			{/* <Icon name={name} size={22} color={tintColor} /> */}
+			{/* <WIcon name={name} size={22} color={tintColor} /> */}
 			<WText size={16} style={{ color: tintColor }}>
 				{t(`nav.tabs.${name}`)}
 			</WText>

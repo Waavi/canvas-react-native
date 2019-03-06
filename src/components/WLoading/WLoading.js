@@ -4,7 +4,7 @@ import { ActivityIndicator } from 'react-native'
 import { Box } from '../Layout'
 import { Colors } from '@/theme'
 
-Loading.propTypes = {
+WLoading.propTypes = {
 	active: PropTypes.bool.isRequired,
 	position: PropTypes.oneOf(['relative', 'absolute']),
 	color: PropTypes.string,
@@ -12,14 +12,14 @@ Loading.propTypes = {
 	opacity: PropTypes.number,
 	style: PropTypes.viewStyle,
 }
-Loading.defaultProps = {
+WLoading.defaultProps = {
 	position: 'relative',
 	color: Colors.brand,
 	bgColor: Colors.background,
 	opacity: 0.8,
 	style: undefined,
 }
-export function Loading({ active, position, color, bgColor, opacity, style }) {
+export function WLoading({ active, position, color, bgColor, opacity, style }) {
 	if (active) {
 		return (
 			<Box

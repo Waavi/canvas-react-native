@@ -10,7 +10,16 @@ const handlePress = (text = 'Clicked!') => () => console.tron.log(text)
 
 storiesOf('WButton', module)
 	.add('colors', () => {
-		const colors = [undefined, 'green', 'white', 'dark', 'dark-light', 'dark-outline', 'yellow']
+		const colors = [
+			undefined,
+			'green',
+			'white',
+			'lightgray',
+			'dark',
+			'dark-light',
+			'dark-outline',
+			'yellow',
+		]
 		return (
 			<StoryView scrollable>
 				<StoryHeader.h1 text="WButton colors" />

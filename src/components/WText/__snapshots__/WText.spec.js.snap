@@ -4,7 +4,7 @@ exports[`Components/WText should have a "class" for each font family defined at 
 <View>
   <View>
     <_class
-      cls="Ubuntu-Bold"
+      cls="bold"
       key="bold"
       scaled={false}
       size={16}
@@ -15,13 +15,18 @@ exports[`Components/WText should have a "class" for each font family defined at 
         style={
           Array [
             undefined,
-            Object {
-              "backgroundColor": "transparent",
-              "color": "#222",
-              "fontFamily": "Ubuntu-Regular",
-              "fontSize": 16,
-              "lineHeight": 20,
-            },
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Ubuntu-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontFamily": "Ubuntu-Bold",
+              },
+            ],
             Object {
               "fontSize": 16,
               "lineHeight": 20,
@@ -36,13 +41,18 @@ exports[`Components/WText should have a "class" for each font family defined at 
           style={
             Array [
               undefined,
-              Object {
-                "backgroundColor": "transparent",
-                "color": "#222",
-                "fontFamily": "Ubuntu-Regular",
-                "fontSize": 16,
-                "lineHeight": 20,
-              },
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "#222",
+                  "fontFamily": "Ubuntu-Regular",
+                  "fontSize": 16,
+                  "lineHeight": 20,
+                },
+                Object {
+                  "fontFamily": "Ubuntu-Bold",
+                },
+              ],
               Object {
                 "fontSize": 16,
                 "lineHeight": 20,
@@ -56,7 +66,7 @@ exports[`Components/WText should have a "class" for each font family defined at 
       </Text>
     </_class>
     <_class
-      cls="Ubuntu-Italic"
+      cls="italic"
       key="italic"
       scaled={false}
       size={16}
@@ -67,13 +77,18 @@ exports[`Components/WText should have a "class" for each font family defined at 
         style={
           Array [
             undefined,
-            Object {
-              "backgroundColor": "transparent",
-              "color": "#222",
-              "fontFamily": "Ubuntu-Regular",
-              "fontSize": 16,
-              "lineHeight": 20,
-            },
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Ubuntu-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontFamily": "Ubuntu-Italic",
+              },
+            ],
             Object {
               "fontSize": 16,
               "lineHeight": 20,
@@ -88,13 +103,18 @@ exports[`Components/WText should have a "class" for each font family defined at 
           style={
             Array [
               undefined,
-              Object {
-                "backgroundColor": "transparent",
-                "color": "#222",
-                "fontFamily": "Ubuntu-Regular",
-                "fontSize": 16,
-                "lineHeight": 20,
-              },
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "#222",
+                  "fontFamily": "Ubuntu-Regular",
+                  "fontSize": 16,
+                  "lineHeight": 20,
+                },
+                Object {
+                  "fontFamily": "Ubuntu-Italic",
+                },
+              ],
               Object {
                 "fontSize": 16,
                 "lineHeight": 20,
@@ -108,7 +128,7 @@ exports[`Components/WText should have a "class" for each font family defined at 
       </Text>
     </_class>
     <_class
-      cls="Ubuntu-Light"
+      cls="light"
       key="light"
       scaled={false}
       size={16}
@@ -119,13 +139,18 @@ exports[`Components/WText should have a "class" for each font family defined at 
         style={
           Array [
             undefined,
-            Object {
-              "backgroundColor": "transparent",
-              "color": "#222",
-              "fontFamily": "Ubuntu-Regular",
-              "fontSize": 16,
-              "lineHeight": 20,
-            },
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Ubuntu-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontFamily": "Ubuntu-Light",
+              },
+            ],
             Object {
               "fontSize": 16,
               "lineHeight": 20,
@@ -140,13 +165,18 @@ exports[`Components/WText should have a "class" for each font family defined at 
           style={
             Array [
               undefined,
-              Object {
-                "backgroundColor": "transparent",
-                "color": "#222",
-                "fontFamily": "Ubuntu-Regular",
-                "fontSize": 16,
-                "lineHeight": 20,
-              },
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "#222",
+                  "fontFamily": "Ubuntu-Regular",
+                  "fontSize": 16,
+                  "lineHeight": 20,
+                },
+                Object {
+                  "fontFamily": "Ubuntu-Light",
+                },
+              ],
               Object {
                 "fontSize": 16,
                 "lineHeight": 20,
@@ -160,7 +190,7 @@ exports[`Components/WText should have a "class" for each font family defined at 
       </Text>
     </_class>
     <_class
-      cls="Ubuntu-Medium"
+      cls="medium"
       key="medium"
       scaled={false}
       size={16}
@@ -171,13 +201,18 @@ exports[`Components/WText should have a "class" for each font family defined at 
         style={
           Array [
             undefined,
-            Object {
-              "backgroundColor": "transparent",
-              "color": "#222",
-              "fontFamily": "Ubuntu-Regular",
-              "fontSize": 16,
-              "lineHeight": 20,
-            },
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Ubuntu-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontFamily": "Ubuntu-Medium",
+              },
+            ],
             Object {
               "fontSize": 16,
               "lineHeight": 20,
@@ -192,13 +227,18 @@ exports[`Components/WText should have a "class" for each font family defined at 
           style={
             Array [
               undefined,
-              Object {
-                "backgroundColor": "transparent",
-                "color": "#222",
-                "fontFamily": "Ubuntu-Regular",
-                "fontSize": 16,
-                "lineHeight": 20,
-              },
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "#222",
+                  "fontFamily": "Ubuntu-Regular",
+                  "fontSize": 16,
+                  "lineHeight": 20,
+                },
+                Object {
+                  "fontFamily": "Ubuntu-Medium",
+                },
+              ],
               Object {
                 "fontSize": 16,
                 "lineHeight": 20,
@@ -212,7 +252,7 @@ exports[`Components/WText should have a "class" for each font family defined at 
       </Text>
     </_class>
     <_class
-      cls="Ubuntu-Regular"
+      cls="regular"
       key="regular"
       scaled={false}
       size={16}
@@ -223,13 +263,18 @@ exports[`Components/WText should have a "class" for each font family defined at 
         style={
           Array [
             undefined,
-            Object {
-              "backgroundColor": "transparent",
-              "color": "#222",
-              "fontFamily": "Ubuntu-Regular",
-              "fontSize": 16,
-              "lineHeight": 20,
-            },
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Ubuntu-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontFamily": "Ubuntu-Regular",
+              },
+            ],
             Object {
               "fontSize": 16,
               "lineHeight": 20,
@@ -244,13 +289,18 @@ exports[`Components/WText should have a "class" for each font family defined at 
           style={
             Array [
               undefined,
-              Object {
-                "backgroundColor": "transparent",
-                "color": "#222",
-                "fontFamily": "Ubuntu-Regular",
-                "fontSize": 16,
-                "lineHeight": 20,
-              },
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "#222",
+                  "fontFamily": "Ubuntu-Regular",
+                  "fontSize": 16,
+                  "lineHeight": 20,
+                },
+                Object {
+                  "fontFamily": "Ubuntu-Regular",
+                },
+              ],
               Object {
                 "fontSize": 16,
                 "lineHeight": 20,
@@ -264,7 +314,7 @@ exports[`Components/WText should have a "class" for each font family defined at 
       </Text>
     </_class>
     <_class
-      cls="Ubuntu-Medium"
+      cls="semibold"
       key="semibold"
       scaled={false}
       size={16}
@@ -275,13 +325,18 @@ exports[`Components/WText should have a "class" for each font family defined at 
         style={
           Array [
             undefined,
-            Object {
-              "backgroundColor": "transparent",
-              "color": "#222",
-              "fontFamily": "Ubuntu-Regular",
-              "fontSize": 16,
-              "lineHeight": 20,
-            },
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#222",
+                "fontFamily": "Ubuntu-Regular",
+                "fontSize": 16,
+                "lineHeight": 20,
+              },
+              Object {
+                "fontFamily": "Ubuntu-Medium",
+              },
+            ],
             Object {
               "fontSize": 16,
               "lineHeight": 20,
@@ -296,13 +351,18 @@ exports[`Components/WText should have a "class" for each font family defined at 
           style={
             Array [
               undefined,
-              Object {
-                "backgroundColor": "transparent",
-                "color": "#222",
-                "fontFamily": "Ubuntu-Regular",
-                "fontSize": 16,
-                "lineHeight": 20,
-              },
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "#222",
+                  "fontFamily": "Ubuntu-Regular",
+                  "fontSize": 16,
+                  "lineHeight": 20,
+                },
+                Object {
+                  "fontFamily": "Ubuntu-Medium",
+                },
+              ],
               Object {
                 "fontSize": 16,
                 "lineHeight": 20,
@@ -323,14 +383,13 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
 <View>
   <View>
     <_class
-      cls={8}
       key="8"
       scaled={false}
-      size={16}
+      size="8"
     >
       <Text
         scaled={false}
-        size={16}
+        size="8"
         style={
           Array [
             undefined,
@@ -342,8 +401,8 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
               "lineHeight": 20,
             },
             Object {
-              "fontSize": 16,
-              "lineHeight": 20,
+              "fontSize": "8",
+              "lineHeight": 10,
             },
             undefined,
           ]
@@ -351,7 +410,7 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
       >
         <Text
           scaled={false}
-          size={16}
+          size="8"
           style={
             Array [
               undefined,
@@ -363,8 +422,8 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
                 "lineHeight": 20,
               },
               Object {
-                "fontSize": 16,
-                "lineHeight": 20,
+                "fontSize": "8",
+                "lineHeight": 10,
               },
               undefined,
             ]
@@ -375,14 +434,13 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
       </Text>
     </_class>
     <_class
-      cls={9}
       key="9"
       scaled={false}
-      size={16}
+      size="9"
     >
       <Text
         scaled={false}
-        size={16}
+        size="9"
         style={
           Array [
             undefined,
@@ -394,8 +452,8 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
               "lineHeight": 20,
             },
             Object {
-              "fontSize": 16,
-              "lineHeight": 20,
+              "fontSize": "9",
+              "lineHeight": 11.25,
             },
             undefined,
           ]
@@ -403,7 +461,7 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
       >
         <Text
           scaled={false}
-          size={16}
+          size="9"
           style={
             Array [
               undefined,
@@ -415,8 +473,8 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
                 "lineHeight": 20,
               },
               Object {
-                "fontSize": 16,
-                "lineHeight": 20,
+                "fontSize": "9",
+                "lineHeight": 11.25,
               },
               undefined,
             ]
@@ -427,14 +485,13 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
       </Text>
     </_class>
     <_class
-      cls={10}
       key="10"
       scaled={false}
-      size={16}
+      size="10"
     >
       <Text
         scaled={false}
-        size={16}
+        size="10"
         style={
           Array [
             undefined,
@@ -446,8 +503,8 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
               "lineHeight": 20,
             },
             Object {
-              "fontSize": 16,
-              "lineHeight": 20,
+              "fontSize": "10",
+              "lineHeight": 12.5,
             },
             undefined,
           ]
@@ -455,7 +512,7 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
       >
         <Text
           scaled={false}
-          size={16}
+          size="10"
           style={
             Array [
               undefined,
@@ -467,8 +524,8 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
                 "lineHeight": 20,
               },
               Object {
-                "fontSize": 16,
-                "lineHeight": 20,
+                "fontSize": "10",
+                "lineHeight": 12.5,
               },
               undefined,
             ]
@@ -479,14 +536,13 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
       </Text>
     </_class>
     <_class
-      cls={11}
       key="11"
       scaled={false}
-      size={16}
+      size="11"
     >
       <Text
         scaled={false}
-        size={16}
+        size="11"
         style={
           Array [
             undefined,
@@ -498,8 +554,8 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
               "lineHeight": 20,
             },
             Object {
-              "fontSize": 16,
-              "lineHeight": 20,
+              "fontSize": "11",
+              "lineHeight": 13.75,
             },
             undefined,
           ]
@@ -507,7 +563,7 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
       >
         <Text
           scaled={false}
-          size={16}
+          size="11"
           style={
             Array [
               undefined,
@@ -519,8 +575,8 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
                 "lineHeight": 20,
               },
               Object {
-                "fontSize": 16,
-                "lineHeight": 20,
+                "fontSize": "11",
+                "lineHeight": 13.75,
               },
               undefined,
             ]
@@ -531,14 +587,13 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
       </Text>
     </_class>
     <_class
-      cls={12}
       key="12"
       scaled={false}
-      size={16}
+      size="12"
     >
       <Text
         scaled={false}
-        size={16}
+        size="12"
         style={
           Array [
             undefined,
@@ -550,8 +605,8 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
               "lineHeight": 20,
             },
             Object {
-              "fontSize": 16,
-              "lineHeight": 20,
+              "fontSize": "12",
+              "lineHeight": 15,
             },
             undefined,
           ]
@@ -559,7 +614,7 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
       >
         <Text
           scaled={false}
-          size={16}
+          size="12"
           style={
             Array [
               undefined,
@@ -571,8 +626,8 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
                 "lineHeight": 20,
               },
               Object {
-                "fontSize": 16,
-                "lineHeight": 20,
+                "fontSize": "12",
+                "lineHeight": 15,
               },
               undefined,
             ]
@@ -583,14 +638,13 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
       </Text>
     </_class>
     <_class
-      cls={14}
       key="14"
       scaled={false}
-      size={16}
+      size="14"
     >
       <Text
         scaled={false}
-        size={16}
+        size="14"
         style={
           Array [
             undefined,
@@ -602,8 +656,8 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
               "lineHeight": 20,
             },
             Object {
-              "fontSize": 16,
-              "lineHeight": 20,
+              "fontSize": "14",
+              "lineHeight": 17.5,
             },
             undefined,
           ]
@@ -611,7 +665,7 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
       >
         <Text
           scaled={false}
-          size={16}
+          size="14"
           style={
             Array [
               undefined,
@@ -623,8 +677,8 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
                 "lineHeight": 20,
               },
               Object {
-                "fontSize": 16,
-                "lineHeight": 20,
+                "fontSize": "14",
+                "lineHeight": 17.5,
               },
               undefined,
             ]
@@ -635,14 +689,13 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
       </Text>
     </_class>
     <_class
-      cls={16}
       key="16"
       scaled={false}
-      size={16}
+      size="16"
     >
       <Text
         scaled={false}
-        size={16}
+        size="16"
         style={
           Array [
             undefined,
@@ -654,7 +707,7 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
               "lineHeight": 20,
             },
             Object {
-              "fontSize": 16,
+              "fontSize": "16",
               "lineHeight": 20,
             },
             undefined,
@@ -663,7 +716,7 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
       >
         <Text
           scaled={false}
-          size={16}
+          size="16"
           style={
             Array [
               undefined,
@@ -675,7 +728,7 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
                 "lineHeight": 20,
               },
               Object {
-                "fontSize": 16,
+                "fontSize": "16",
                 "lineHeight": 20,
               },
               undefined,
@@ -687,14 +740,13 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
       </Text>
     </_class>
     <_class
-      cls={18}
       key="18"
       scaled={false}
-      size={16}
+      size="18"
     >
       <Text
         scaled={false}
-        size={16}
+        size="18"
         style={
           Array [
             undefined,
@@ -706,8 +758,8 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
               "lineHeight": 20,
             },
             Object {
-              "fontSize": 16,
-              "lineHeight": 20,
+              "fontSize": "18",
+              "lineHeight": 22.5,
             },
             undefined,
           ]
@@ -715,7 +767,7 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
       >
         <Text
           scaled={false}
-          size={16}
+          size="18"
           style={
             Array [
               undefined,
@@ -727,8 +779,8 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
                 "lineHeight": 20,
               },
               Object {
-                "fontSize": 16,
-                "lineHeight": 20,
+                "fontSize": "18",
+                "lineHeight": 22.5,
               },
               undefined,
             ]
@@ -745,162 +797,6 @@ exports[`Components/WText should have a "class" for each font size defined at Fo
 exports[`Components/WText should have the "classes": "title", "text", ... 1`] = `
 <View>
   <View>
-    <_class
-      cls="title"
-      key="title"
-      scaled={false}
-      size={16}
-    >
-      <Text
-        scaled={false}
-        size={16}
-        style={
-          Array [
-            undefined,
-            Object {
-              "backgroundColor": "transparent",
-              "color": "#222",
-              "fontFamily": "Ubuntu-Regular",
-              "fontSize": 16,
-              "lineHeight": 20,
-            },
-            Object {
-              "fontSize": 16,
-              "lineHeight": 20,
-            },
-            undefined,
-          ]
-        }
-      >
-        <Text
-          scaled={false}
-          size={16}
-          style={
-            Array [
-              undefined,
-              Object {
-                "backgroundColor": "transparent",
-                "color": "#222",
-                "fontFamily": "Ubuntu-Regular",
-                "fontSize": 16,
-                "lineHeight": 20,
-              },
-              Object {
-                "fontSize": 16,
-                "lineHeight": 20,
-              },
-              undefined,
-            ]
-          }
-        >
-          test
-        </Text>
-      </Text>
-    </_class>
-    <_class
-      cls="text"
-      key="text"
-      scaled={false}
-      size={16}
-    >
-      <Text
-        scaled={false}
-        size={16}
-        style={
-          Array [
-            undefined,
-            Object {
-              "backgroundColor": "transparent",
-              "color": "#222",
-              "fontFamily": "Ubuntu-Regular",
-              "fontSize": 16,
-              "lineHeight": 20,
-            },
-            Object {
-              "fontSize": 16,
-              "lineHeight": 20,
-            },
-            undefined,
-          ]
-        }
-      >
-        <Text
-          scaled={false}
-          size={16}
-          style={
-            Array [
-              undefined,
-              Object {
-                "backgroundColor": "transparent",
-                "color": "#222",
-                "fontFamily": "Ubuntu-Regular",
-                "fontSize": 16,
-                "lineHeight": 20,
-              },
-              Object {
-                "fontSize": 16,
-                "lineHeight": 20,
-              },
-              undefined,
-            ]
-          }
-        >
-          test
-        </Text>
-      </Text>
-    </_class>
-    <_class
-      cls="grow"
-      key="grow"
-      scaled={false}
-      size={16}
-    >
-      <Text
-        scaled={false}
-        size={16}
-        style={
-          Array [
-            undefined,
-            Object {
-              "backgroundColor": "transparent",
-              "color": "#222",
-              "fontFamily": "Ubuntu-Regular",
-              "fontSize": 16,
-              "lineHeight": 20,
-            },
-            Object {
-              "fontSize": 16,
-              "lineHeight": 20,
-            },
-            undefined,
-          ]
-        }
-      >
-        <Text
-          scaled={false}
-          size={16}
-          style={
-            Array [
-              undefined,
-              Object {
-                "backgroundColor": "transparent",
-                "color": "#222",
-                "fontFamily": "Ubuntu-Regular",
-                "fontSize": 16,
-                "lineHeight": 20,
-              },
-              Object {
-                "fontSize": 16,
-                "lineHeight": 20,
-              },
-              undefined,
-            ]
-          }
-        >
-          test
-        </Text>
-      </Text>
-    </_class>
     <_class
       cls="left"
       key="left"

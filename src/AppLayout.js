@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { NotificationsActions, NavigationActions } from '#actions'
 import { FlagsSelectors } from '#selectors'
 import { View, StyleSheet, BackHandler } from 'react-native'
-import { Loading, Modal } from '@/components'
+import { WLoading, WModal } from '@/components'
 import { ReduxifiedAppNavigator } from '@/store/navigation'
 
 // TODO: cambiar isRehydrated por algo del tipo isReady o isInitialized para hacerlo más genérico
@@ -115,14 +115,14 @@ class AppLayout extends Component {
 	render() {
 		const { isRehydrated, isLoading, notification } = this.props
 		if (!isRehydrated) {
-			return <Loading active opacity={1} />
+			return <WLoading active opacity={1} />
 		}
 		const { visible, onDismiss, ...modalProps } = notification
 		return (
 			<View style={styles.container}>
 				<ReduxifiedAppNavigator ref={this.navigatorRef} />
-				<Loading active={isLoading} opacity={1} position="absolute" />
-				<Modal visible={visible} {...modalProps} onDismiss={this.handleModalDismiss} />
+				<WLoading active={isLoading} opacity={1} position="absolute" />
+				<WModal visible={visible} {...modalProps} onDismiss={this.handleModalDismiss} />
 			</View>
 		)
 	}

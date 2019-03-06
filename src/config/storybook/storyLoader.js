@@ -6,11 +6,11 @@
 
 function loadStories() {
 	require('../../components/WButton/WButton.stories')
-	require('../../components/Icon/Icon.stories')
+	require('../../components/WIcon/WIcon.stories')
 	require('../../components/Layout/ScreenView/ScreenView.stories')
 	require('../../components/WLinearGradient/WLinearGradient.stories')
-	require('../../components/Loading/Loading.stories')
-	require('../../components/Modal/Modal.stories')
+	require('../../components/WLoading/WLoading.stories')
+	require('../../components/WModal/WModal.stories')
 	require('../../components/WText/WText.stories')
 	require('../../components/FormGroup/Text.stories')
 	require('../../components/FormGroup/Checkbox.stories')
@@ -18,11 +18,11 @@ function loadStories() {
 
 const stories = [
 	'../../components/WButton/WButton.stories',
-	'../../components/Icon/Icon.stories',
+	'../../components/WIcon/WIcon.stories',
 	'../../components/Layout/ScreenView/ScreenView.stories',
 	'../../components/WLinearGradient/WLinearGradient.stories',
-	'../../components/Loading/Loading.stories',
-	'../../components/Modal/Modal.stories',
+	'../../components/WLoading/WLoading.stories',
+	'../../components/WModal/WModal.stories',
 	'../../components/WText/WText.stories',
 	'../../components/FormGroup/Text.stories',
 	'../../components/FormGroup/Checkbox.stories',

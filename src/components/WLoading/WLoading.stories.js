@@ -1,20 +1,18 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react'
 import { storiesOf } from '@storybook/react-native'
+import { boolean } from '@storybook/addon-knobs'
 import { StoryView, StoryCase, StoryHeader } from '@modules/react-native-storybook/components'
 import { Text } from 'react-native'
 import { Colors } from '@/theme'
-import { Loading } from './Loading'
+import { WLoading } from './WLoading'
 
-storiesOf('Loading', module)
-	.add('active / inactive', () => (
+storiesOf('WLoading', module)
+	.add('Default', () => (
 		<StoryView scrollable>
 			<StoryHeader.h1 text="Loading" />
-			<StoryCase text="with active = true">
-				<Loading active />
-			</StoryCase>
-			<StoryCase text="with active = false">
-				<Loading active={false} />
+			<StoryCase text="with active = true" description="Use the Addons options">
+				<WLoading active={boolean('Active', true)} />
 			</StoryCase>
 		</StoryView>
 	))
@@ -29,7 +27,7 @@ storiesOf('Loading', module)
 						key={color || 'none'}
 						text={color ? `with color '${color}'` : 'default'}
 					>
-						<Loading active color={Colors[color]} />
+						<WLoading active color={Colors[color]} />
 					</StoryCase>
 				))}
 				<StoryHeader.h1 text="Loading background colors" />
@@ -38,7 +36,7 @@ storiesOf('Loading', module)
 						key={color || 'none'}
 						text={color ? `with background color '${color}'` : 'default'}
 					>
-						<Loading active bgColor={Colors[color]} />
+						<WLoading active bgColor={Colors[color]} />
 					</StoryCase>
 				))}
 			</StoryView>
@@ -51,11 +49,11 @@ storiesOf('Loading', module)
 				<StoryHeader.h1 text="Loading" />
 				<StoryCase text="default">
 					<Text style={textStyle}>A sample text</Text>
-					<Loading active />
+					<WLoading active />
 				</StoryCase>
 				<StoryCase text="with position = absolute">
 					<Text style={textStyle}>A sample text</Text>
-					<Loading active position="absolute" />
+					<WLoading active position="absolute" />
 				</StoryCase>
 			</StoryView>
 		)
@@ -67,15 +65,15 @@ storiesOf('Loading', module)
 				<StoryHeader.h1 text="Loading" />
 				<StoryCase text="default">
 					<Text style={textStyle}>A sample text</Text>
-					<Loading active position="absolute" />
+					<WLoading active position="absolute" />
 				</StoryCase>
 				<StoryCase text="with opacity = 0.95">
 					<Text style={textStyle}>A sample text</Text>
-					<Loading active position="absolute" opacity={0.95} />
+					<WLoading active position="absolute" opacity={0.95} />
 				</StoryCase>
 				<StoryCase text="with opacity = 0">
 					<Text style={textStyle}>A sample text</Text>
-					<Loading active position="absolute" opacity={0} />
+					<WLoading active position="absolute" opacity={0} />
 				</StoryCase>
 			</StoryView>
 		)

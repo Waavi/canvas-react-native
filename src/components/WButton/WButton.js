@@ -41,18 +41,16 @@ export class WButton extends Component {
 			textStyle,
 		} = this.props
 		const {
+			_config: configStyle,
 			wrapper: wrapperClsStyle,
 			view: viewClsStyle,
 			text: textClsStyle,
-			gradient: gradientStyle,
 		} = clsStyles.getStyles(disabled ? 'disabled' : cls, this.cache)
 		const innerViewStyle = [viewClsStyle, style]
 		const content = (
-			<View style={innerViewStyle}>
-				<Text numberOfLines={numberOfLines} style={[textClsStyle, textStyle]}>
-					{text}
-				</Text>
-			</View>
+			<Text numberOfLines={numberOfLines} style={[textClsStyle, textStyle]}>
+				{text}
+			</Text>
 		)
 
 		return (
@@ -61,12 +59,16 @@ export class WButton extends Component {
 				onPress={onPress}
 				style={[wrapperClsStyle, wrapperStyle]}
 			>
-				{gradientStyle ? (
-					<WLinearGradient style={gradientStyle} direction="horizontal" color="secondary">
+				{(configStyle || {}).gradient !== false ? (
+					<WLinearGradient
+						style={innerViewStyle}
+						direction="horizontal"
+						color="secondary"
+					>
 						{content}
 					</WLinearGradient>
 				) : (
-					content
+					<View style={innerViewStyle}>{content}</View>
 				)}
 			</TouchableOpacity>
 		)

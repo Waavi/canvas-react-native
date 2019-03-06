@@ -21,7 +21,7 @@ describe('Components/WText', () => {
 		const wrapper = mount(
 			<View>
 				{Object.keys(Fonts.type).map(type => (
-					<WText key={type} cls={Fonts.type[type]}>
+					<WText key={type} cls={type}>
 						test
 					</WText>
 				))}
@@ -33,7 +33,7 @@ describe('Components/WText', () => {
 		const wrapper = mount(
 			<View>
 				{Object.keys(Fonts.size).map(size => (
-					<WText key={size} cls={Fonts.size[size]}>
+					<WText key={size} size={size}>
 						test
 					</WText>
 				))}
@@ -42,7 +42,7 @@ describe('Components/WText', () => {
 		expect(wrapper).toMatchSnapshot()
 	})
 	it('should have the "classes": "title", "text", ...', () => {
-		const classes = ['title', 'text', 'grow', 'left', 'center', 'right']
+		const classes = ['left', 'center', 'right']
 		const wrapper = mount(
 			<View>
 				{classes.map(cls => (

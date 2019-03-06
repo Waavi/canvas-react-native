@@ -4,9 +4,9 @@ import { storiesOf } from '@storybook/react-native'
 import { select, number, color } from '@storybook/addon-knobs'
 import { StoryView, StoryHeader } from '@modules/react-native-storybook/components'
 import { Colors } from '@/theme'
-import { Icon } from './Icon'
+import { WIcon } from './WIcon'
 
-storiesOf('Icon', module)
+storiesOf('WIcon', module)
 	.add(
 		'all icons',
 		() => (
@@ -16,7 +16,7 @@ storiesOf('Icon', module)
 					{icons.map(name => (
 						<View key={name} style={styles.iconBox}>
 							<View style={styles.iconWrapper}>
-								<Icon name={name} size={25} color={Colors.brand} />
+								<WIcon name={name} size={25} color={Colors.brand} />
 							</View>
 							<View style={styles.textWrapper}>
 								<Text style={styles.text}>{name}</Text>
@@ -46,7 +46,7 @@ storiesOf('Icon', module)
 						text="Colors and sizes"
 						description="Play with knobs to modify color and size"
 					/>
-					<Icon name={name} size={size} color={iconColor} />
+					<WIcon name={name} size={size} color={iconColor} />
 				</StoryView>
 			)
 		},

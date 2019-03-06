@@ -3,7 +3,7 @@ import PropTypes from '#propTypes'
 import { Box } from '@/components/Layout/Box'
 import { WButton } from '@/components/WButton'
 
-export class ModalButtons extends Component {
+export class WModalButtons extends Component {
 	static propTypes = {
 		dismissBtnText: PropTypes.string,
 		buttons: PropTypes.arrayOf(
@@ -38,7 +38,7 @@ export class ModalButtons extends Component {
 				...allButtons,
 				{
 					text: dismissBtnText,
-					variant: buttons.length === 1 ? 'white' : 'white mt-10',
+					variant: buttons.length === 1 ? '' : 'mt-10',
 				},
 			]
 		}
@@ -47,12 +47,12 @@ export class ModalButtons extends Component {
 			return (
 				<Box cls="self-stretch row-center mt-s" style={{}}>
 					<WButton
-						cls={['flex-1 mr-5', btn2.variant || 'green']}
+						cls={['flex-1 mr-5', btn2.variant || 'lightgray']}
 						text={btn2.text}
 						onPress={() => this.handleActionAndDismiss(btn2.onPress)}
 					/>
 					<WButton
-						cls={['flex-1 ml-5', btn1.variant || 'green']}
+						cls={['flex-1 ml-5', btn1.variant || '']}
 						text={btn1.text}
 						onPress={() => this.handleActionAndDismiss(btn1.onPress)}
 					/>
@@ -62,7 +62,7 @@ export class ModalButtons extends Component {
 		if (allButtons.length > 0) {
 			return (
 				<Box cls="self-stretch mt-s px-2s">
-					{allButtons.map(({ text, onPress, variant = 'green' }, index) => (
+					{allButtons.map(({ text, onPress, variant }, index) => (
 						<WButton
 							// eslint-disable-next-line react/no-array-index-key
 							key={index}

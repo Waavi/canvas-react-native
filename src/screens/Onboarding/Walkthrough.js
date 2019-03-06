@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { func, shape } from 'prop-types'
 import { connect } from 'react-redux'
 import { AuthActions, NotificationsActions } from '#actions'
-import { ScreenView, WButton, Icon } from '@/components'
+import { ScreenView, WButton, WIcon } from '@/components'
 
 @connect(
 	null,
@@ -21,7 +21,7 @@ export class WalkthroughScreen extends Component {
 		const { showNotificationInfo, forceLogin, navigation } = this.props
 		return (
 			<ScreenView scrollable color="white" cls="col-stretch-center pt-3s px-s pb-s">
-				<Icon name="card" />
+				<WIcon name="card" />
 				<WButton
 					text="signin"
 					textAlign="center"

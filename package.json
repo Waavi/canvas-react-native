@@ -22,7 +22,7 @@
 		"bump-version": "scripts/version.sh",
 		"refresh-dotenv": "scripts/forceEnvFileRrefresh.sh",
 		"refresh-dotenv-watch": "watchman-make -p '.env' '.env.*' -r scripts/forceEnvFileRrefresh.sh",
-		"fix-adrian": "scripts/fixAdrianMacbook.sh"
+		"fix-storybook": "scripts/fixAdrianMacbook.sh"
 	},
 	"config": {
 		"react-native-storybook-loader": {
