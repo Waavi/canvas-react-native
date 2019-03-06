@@ -78,6 +78,10 @@ or use the watch command
 yarn refresh-dotenv-watch
 ```
 
+## Rename a project
+
+Use [react-native-rename](https://github.com/junedomingo/react-native-rename).
+
 ## Generating a release apk
 
 -   Generating a signing key:
@@ -253,3 +257,7 @@ appcenter apps set-current WAAVI/Canvas-iOS
 ```
 appcenter apps get-current
 ```
+
+## More info project
+
+[DOCUMENTATION](./README)
