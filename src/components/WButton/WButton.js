@@ -29,15 +29,6 @@ export class WButton extends Component {
 		this.cache = new ClsCache()
 	}
 
-	renderContent = (gradientStyle, content) =>
-		!gradientStyle ? (
-			content
-		) : (
-			<WLinearGradient style={gradientStyle} direction="horizontal" color="secondary">
-				{content}
-			</WLinearGradient>
-		)
-
 	render() {
 		const {
 			cls,
@@ -56,19 +47,26 @@ export class WButton extends Component {
 			gradient: gradientStyle,
 		} = clsStyles.getStyles(disabled ? 'disabled' : cls, this.cache)
 		const innerViewStyle = [viewClsStyle, style]
+		const content = (
+			<View style={innerViewStyle}>
+				<Text numberOfLines={numberOfLines} style={[textClsStyle, textStyle]}>
+					{text}
+				</Text>
+			</View>
+		)
+
 		return (
 			<TouchableOpacity
 				disabled={disabled}
 				onPress={onPress}
 				style={[wrapperClsStyle, wrapperStyle]}
 			>
-				{this.renderContent(
-					gradientStyle,
-					<View style={innerViewStyle}>
-						<Text numberOfLines={numberOfLines} style={[textClsStyle, textStyle]}>
-							{text}
-						</Text>
-					</View>
+				{gradientStyle ? (
+					<WLinearGradient style={gradientStyle} direction="horizontal" color="secondary">
+						{content}
+					</WLinearGradient>
+				) : (
+					content
 				)}
 			</TouchableOpacity>
 		)
