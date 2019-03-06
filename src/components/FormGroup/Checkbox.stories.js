@@ -1,15 +1,15 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 import { storiesOf } from '@storybook/react-native'
-import { StoryView } from '@modules/react-native-storybook/components'
+import { StoryCase } from '@modules/react-native-storybook/components'
 import withReduxForm from '@modules/react-native-storybook/decorators/reduxForm'
 import { boolean } from '@storybook/addon-knobs'
 import { Checkbox } from './Checkbox'
 
 storiesOf('FG/Checkbox', module)
-	.addDecorator(withReduxForm.bind({ email: '' }))
+	.addDecorator(withReduxForm)
 	.add('default', () => (
-		<StoryView align="stretch" padded>
+		<StoryCase text="Default" description="Use the Addons options">
 			<View style={styles.wrapper}>
 				<Checkbox
 					name="demo"
@@ -18,13 +18,12 @@ storiesOf('FG/Checkbox', module)
 						onChange: () => console.tron.log(`Clicked`),
 					}}
 				/>
-				<Text>(Use the Addons options)</Text>
 			</View>
-		</StoryView>
+		</StoryCase>
 	))
 
 const styles = StyleSheet.create({
 	wrapper: {
-		marginVertical: 5,
+		margin: 10,
 	},
 })

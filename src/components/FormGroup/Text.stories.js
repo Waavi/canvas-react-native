@@ -1,7 +1,7 @@
 import React from 'react'
-import { View, StyleSheet, Text as RNText } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 import { storiesOf } from '@storybook/react-native'
-import { StoryView } from '@modules/react-native-storybook/components'
+import { StoryCase } from '@modules/react-native-storybook/components'
 import withReduxForm from '@modules/react-native-storybook/decorators/reduxForm'
 import { text, boolean } from '@storybook/addon-knobs'
 import { emailValidation } from '@/utils/validation'
@@ -9,14 +9,14 @@ import { Text } from './Text'
 
 const styles = StyleSheet.create({
 	wrapper: {
-		marginVertical: 5,
+		margin: 10,
 	},
 })
 
 storiesOf('FG/Text', module)
-	.addDecorator(withReduxForm.bind({ email: '' }))
+	.addDecorator(withReduxForm)
 	.add('default', () => (
-		<StoryView align="stretch" padded>
+		<StoryCase text="Default" description="Use the Addons options">
 			<View style={styles.wrapper}>
 				<Text
 					name="email"
@@ -29,11 +29,10 @@ storiesOf('FG/Text', module)
 					}}
 				/>
 			</View>
-			<RNText>(Use the Addons options)</RNText>
-		</StoryView>
+		</StoryCase>
 	))
 	.add('error', () => (
-		<StoryView align="stretch" padded>
+		<StoryCase text="Text with error" description="Use the Addons options">
 			<View style={styles.wrapper}>
 				<Text
 					name="email"
@@ -46,6 +45,5 @@ storiesOf('FG/Text', module)
 					}}
 				/>
 			</View>
-			<RNText>(Use the Addons options)</RNText>
-		</StoryView>
+		</StoryCase>
 	))
