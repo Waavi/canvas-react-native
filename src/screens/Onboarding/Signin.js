@@ -26,7 +26,6 @@ export class SigninScreen extends Component {
 	}
 
 	render() {
-		// const {  } = this.props
 		return (
 			<ScreenView scrollable color="white" cls="col-center pt-3s px-s pb-s">
 				<WText size={20} cls="medium center mb-s">
