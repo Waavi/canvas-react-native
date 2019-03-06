@@ -5,7 +5,7 @@ import { WIcon } from './WIcon'
 import { VectorIcon } from './VectorIcon'
 
 describe('Components/WIcon', () => {
-	it('should be a wrapper of native Text', () => {
+	it('should use VectorIcon', () => {
 		const props = { name: 'chevron' }
 		const wrapper = shallow(<WIcon {...props} />)
 		const innerText = wrapper.find(VectorIcon)

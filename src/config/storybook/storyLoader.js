@@ -9,7 +9,7 @@ function loadStories() {
 	require('../../components/WIcon/WIcon.stories')
 	require('../../components/Layout/ScreenView/ScreenView.stories')
 	require('../../components/WLinearGradient/WLinearGradient.stories')
-	require('../../components/Loading/Loading.stories')
+	require('../../components/WLoading/WLoading.stories')
 	require('../../components/WModal/WModal.stories')
 	require('../../components/WText/WText.stories')
 }
@@ -19,7 +19,7 @@ const stories = [
 	'../../components/WIcon/WIcon.stories',
 	'../../components/Layout/ScreenView/ScreenView.stories',
 	'../../components/WLinearGradient/WLinearGradient.stories',
-	'../../components/Loading/Loading.stories',
+	'../../components/WLoading/WLoading.stories',
 	'../../components/WModal/WModal.stories',
 	'../../components/WText/WText.stories',
 ]

@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components/WLoading should be not render ActivityIndicator native 1`] = `null`;
+
+exports[`Components/WLoading should be render ActivityIndicator native 1`] = `
+<_class
+  cls={
+    Array [
+      "col-center",
+      Object {
+        "pos-absolute-fill": false,
+      },
+    ]
+  }
+>
+  <_class
+    cls="pos-absolute-fill"
+    style={
+      Object {
+        "backgroundColor": "#EDF0F4",
+        "opacity": 0.8,
+      }
+    }
+  />
+  <ActivityIndicator
+    animating={true}
+    color="#18E2A5"
+    hidesWhenStopped={true}
+    size="large"
+  />
+</_class>
+`;
