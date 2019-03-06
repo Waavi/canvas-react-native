@@ -4,12 +4,11 @@ import { Field } from 'redux-form'
 import { View, TouchableOpacity } from 'react-native'
 import { WIcon } from '@/components'
 import { Colors } from '@/theme'
-import { FormGroup } from './FormGroup'
+import { FormGroupClear } from './FormGroupClear'
 
 export class Checkbox extends PureComponent {
 	static propTypes = {
 		name: string.isRequired,
-		label: string.isRequired,
 		iconSize: number,
 	}
 	static defaultProps = {
@@ -31,7 +30,7 @@ export class Checkbox extends PureComponent {
 			paddingRight: 0,
 		}
 		return (
-			<FormGroup CustomFormGroup={CustomFormGroup} label={label}>
+			<FormGroupClear CustomFormGroup={CustomFormGroup} label={label}>
 				<TouchableOpacity onPress={() => onChange(!checked)}>
 					<View style={wrapper}>
 						<WIcon
@@ -41,7 +40,7 @@ export class Checkbox extends PureComponent {
 						/>
 					</View>
 				</TouchableOpacity>
-			</FormGroup>
+			</FormGroupClear>
 		)
 	}
 
