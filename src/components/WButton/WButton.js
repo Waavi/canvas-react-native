@@ -3,8 +3,9 @@ import PropTypes from '#propTypes'
 import { ClsCache } from '@modules/react-native-cls'
 import { TouchableOpacity, View, Text } from 'react-native'
 import clsStyles from './clsStyles'
+import { WLinearGradient } from '../WLinearGradient'
 
-export class Button extends Component {
+export class WButton extends Component {
 	static propTypes = {
 		cls: PropTypes.cls,
 		text: PropTypes.string.isRequired,
@@ -27,6 +28,7 @@ export class Button extends Component {
 		super(props)
 		this.cache = new ClsCache()
 	}
+
 	render() {
 		const {
 			cls,
@@ -42,19 +44,30 @@ export class Button extends Component {
 			wrapper: wrapperClsStyle,
 			view: viewClsStyle,
 			text: textClsStyle,
-		} = clsStyles.getStyles(cls, this.cache)
-		const innerViewStyle = [viewClsStyle, style, { opacity: disabled ? 0.5 : 1 }]
+			gradient: gradientStyle,
+		} = clsStyles.getStyles(disabled ? 'disabled' : cls, this.cache)
+		const innerViewStyle = [viewClsStyle, style]
+		const content = (
+			<View style={innerViewStyle}>
+				<Text numberOfLines={numberOfLines} style={[textClsStyle, textStyle]}>
+					{text}
+				</Text>
+			</View>
+		)
+
 		return (
 			<TouchableOpacity
 				disabled={disabled}
 				onPress={onPress}
 				style={[wrapperClsStyle, wrapperStyle]}
 			>
-				<View style={innerViewStyle}>
-					<Text numberOfLines={numberOfLines} style={[textClsStyle, textStyle]}>
-						{text}
-					</Text>
-				</View>
+				{gradientStyle ? (
+					<WLinearGradient style={gradientStyle} direction="horizontal" color="secondary">
+						{content}
+					</WLinearGradient>
+				) : (
+					content
+				)}
 			</TouchableOpacity>
 		)
 	}

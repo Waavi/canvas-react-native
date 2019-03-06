@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { func, shape } from 'prop-types'
 import { connect } from 'react-redux'
 import { AuthActions, NotificationsActions } from '#actions'
-import { ScreenView, Button, Icon } from '@/components'
+import { ScreenView, WButton, Icon } from '@/components'
 
 @connect(
 	null,
@@ -22,8 +22,8 @@ export class WalkthroughScreen extends Component {
 		return (
 			<ScreenView scrollable color="white" cls="col-stretch-center pt-3s px-s pb-s">
 				<Icon name="card" />
-				<Button text="signin" textAlign="center" toUpper onPress={() => forceLogin()} />
-				<Button
+				<WButton text="signin" textAlign="center" toUpper onPress={() => forceLogin()} />
+				<WButton
 					text="test modal"
 					textAlign="center"
 					toUpper
@@ -36,11 +36,11 @@ export class WalkthroughScreen extends Component {
 						})
 					}
 				/>
-				<Button text="StoryBook" onPress={() => navigation.navigate('StorybookUI')} />
-				<Button text="blah" onPress={() => {}} />
-				<Button text="blah" onPress={() => {}} />
-				<Button text="blah" onPress={() => {}} />
-				<Button text="blah" onPress={() => {}} />
+				<WButton text="StoryBook" onPress={() => navigation.navigate('StorybookUI')} />
+				<WButton text="blah" onPress={() => {}} />
+				<WButton text="blah" onPress={() => {}} />
+				<WButton text="blah" onPress={() => {}} />
+				<WButton text="blah" onPress={() => {}} />
 			</ScreenView>
 		)
 	}
