@@ -3,11 +3,11 @@ import { Image, View, StyleSheet, Modal as NativeModal, TouchableOpacity } from 
 import PropTypes from '#propTypes'
 import { BasicStyles, Colors } from '@/theme'
 import { Backdrop } from './components/Backdrop'
-import { ModalButtons } from './components/ModalButtons'
+import { WModalButtons } from './components/WModalButtons'
 import { WText } from '../WText'
 import { WIcon } from '../WIcon'
 
-Modal.propTypes = {
+WModal.propTypes = {
 	visible: PropTypes.bool.isRequired,
 	type: PropTypes.string,
 	title: PropTypes.string,
@@ -27,7 +27,7 @@ Modal.propTypes = {
 		})
 	),
 }
-Modal.defaultProps = {
+WModal.defaultProps = {
 	type: undefined,
 	title: undefined,
 	text: undefined,
@@ -40,7 +40,7 @@ Modal.defaultProps = {
 	children: undefined,
 	buttons: [],
 }
-export function Modal({
+export function WModal({
 	visible,
 	// eslint-disable-next-line no-unused-vars
 	type,
@@ -76,7 +76,7 @@ export function Modal({
 						</WText>
 					)}
 					{children}
-					<ModalButtons
+					<WModalButtons
 						dismissBtnText={dismissBtnText}
 						buttons={buttons}
 						onModalDismiss={onDismiss}

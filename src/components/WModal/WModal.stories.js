@@ -5,9 +5,9 @@ import { StoryView } from '@modules/react-native-storybook/components'
 import { WithStateBool } from '@modules/react-native-components'
 import { TouchableOpacity, Text } from 'react-native'
 // import { Text } from 'react-native'
-import { Modal } from './Modal'
+import { WModal } from './WModal'
 
-storiesOf('Modal', module).add('Modal', () => {
+storiesOf('WModal', module).add('WModal', () => {
 	const textStyle = {
 		padding: 10,
 		marginVertical: 10,
@@ -22,7 +22,7 @@ storiesOf('Modal', module).add('Modal', () => {
 					<TouchableOpacity onPress={() => setVisible(true)}>
 						<Text style={textStyle}>{btnText}</Text>
 					</TouchableOpacity>
-					<Modal
+					<WModal
 						visible={visible}
 						title="A sample Modal"
 						text={text}
@@ -60,7 +60,6 @@ storiesOf('Modal', module).add('Modal', () => {
 						{
 							text: 'button text',
 							onPress: () => console.tron.log('clicked'),
-							variant: 'dark',
 						},
 					],
 				}

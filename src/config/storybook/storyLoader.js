@@ -10,7 +10,7 @@ function loadStories() {
 	require('../../components/Layout/ScreenView/ScreenView.stories')
 	require('../../components/WLinearGradient/WLinearGradient.stories')
 	require('../../components/Loading/Loading.stories')
-	require('../../components/Modal/Modal.stories')
+	require('../../components/WModal/WModal.stories')
 	require('../../components/WText/WText.stories')
 }
 
@@ -20,7 +20,7 @@ const stories = [
 	'../../components/Layout/ScreenView/ScreenView.stories',
 	'../../components/WLinearGradient/WLinearGradient.stories',
 	'../../components/Loading/Loading.stories',
-	'../../components/Modal/Modal.stories',
+	'../../components/WModal/WModal.stories',
 	'../../components/WText/WText.stories',
 ]
 

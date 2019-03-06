@@ -3,7 +3,7 @@ import { Fonts, Colors, Metrics, BasicStyles } from '@/theme'
 import { marginClsStyles } from '@/theme/cls/spacingClsStyles'
 
 const clsStyles = ClsStyles.create({
-	mapping: { wrapper: null, view: null, text: null, gradient: null },
+	mapping: { wrapper: null, view: null, text: null, _config: null },
 	styles: {
 		_base: {
 			wrapper: {},
@@ -25,20 +25,28 @@ const clsStyles = ClsStyles.create({
 				includeFontPadding: false,
 				textAlignVertical: 'center',
 			},
-			gradient: {
-				borderRadius: 100,
-			},
 		},
 		disabled: {
 			view: { backgroundColor: Colors.lightgray },
 			text: { color: Colors.white },
-			gradient: null,
+			_config: {
+				gradient: false,
+			},
 		},
 		// Colors
+		lightgray: {
+			view: { backgroundColor: Colors.lightgray },
+			text: { color: Colors.white },
+			_config: {
+				gradient: false,
+			},
+		},
 		green: {
 			view: { backgroundColor: Colors.green },
 			text: { color: Colors.black },
-			gradient: null,
+			_config: {
+				gradient: false,
+			},
 		},
 		white: {
 			view: {
@@ -47,16 +55,22 @@ const clsStyles = ClsStyles.create({
 				backgroundColor: Colors.white,
 			},
 			text: { color: Colors.black },
-			gradient: null,
+			_config: {
+				gradient: false,
+			},
 		},
 		dark: {
 			view: { backgroundColor: Colors.dark },
-			gradient: null,
+			_config: {
+				gradient: false,
+			},
 		},
 		'dark-light': {
 			view: { backgroundColor: Colors.darkgray },
 			text: { color: Colors.white },
-			gradient: null,
+			_config: {
+				gradient: false,
+			},
 		},
 		'dark-outline': {
 			view: {
@@ -65,12 +79,16 @@ const clsStyles = ClsStyles.create({
 				borderColor: Colors.white,
 			},
 			text: { fontSize: Fonts.size[13] },
-			gradient: null,
+			_config: {
+				gradient: false,
+			},
 		},
 		yellow: {
 			view: { backgroundColor: Colors.yellow },
 			text: { color: Colors.black },
-			gradient: null,
+			_config: {
+				gradient: false,
+			},
 		},
 		// Sizes
 		small: {

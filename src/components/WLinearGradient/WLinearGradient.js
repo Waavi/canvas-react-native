@@ -9,7 +9,7 @@ WLinearGradient.propTypes = {
 	direction: PropTypes.oneOf([...DirectionsKeys, '']),
 	color: PropTypes.oneOf('primary', 'secondary', 'tertiary'),
 	colors: PropTypes.arrayOf(PropTypes.string),
-	style: PropTypes.style,
+	style: PropTypes.oneOfType([PropTypes.style, undefined]),
 	start: PropTypes.shape({
 		x: Number,
 		y: Number,
