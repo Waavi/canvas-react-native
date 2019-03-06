@@ -5,7 +5,7 @@ import { BasicStyles, Colors } from '@/theme'
 import { Backdrop } from './components/Backdrop'
 import { ModalButtons } from './components/ModalButtons'
 import { WText } from '../WText'
-import { Icon } from '../Icon'
+import { WIcon } from '../WIcon'
 
 Modal.propTypes = {
 	visible: PropTypes.bool.isRequired,
@@ -61,7 +61,7 @@ export function Modal({
 				<View style={styles.container}>
 					{onDismiss && (
 						<TouchableOpacity onPress={onDismiss} style={styles.closeButton}>
-							<Icon name="times" size={20} color={Colors.lightgray} />
+							<WIcon name="times" size={20} color={Colors.lightgray} />
 						</TouchableOpacity>
 					)}
 					{image && <Image source={image} style={imageStyle} />}

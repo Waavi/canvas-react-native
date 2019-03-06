@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, StyleSheet, Modal as NativeModal, TouchableOpacity } from 'react-native'
 import PropTypes from '#propTypes'
-import { Icon } from '../Icon'
+import { WIcon } from '../WIcon'
 import { Colors, Metrics } from '@/theme'
 
 ModalFullScreen.propTypes = {
@@ -48,7 +48,7 @@ export function ModalFullScreen({
 						onPress={onDismiss}
 						style={[styles.closeButton, closeButtonStyle]}
 					>
-						<Icon name="times" size={20} color={closeButtonColor} />
+						<WIcon name="times" size={20} color={closeButtonColor} />
 					</TouchableOpacity>
 				)}
 			</View>

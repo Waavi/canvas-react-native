@@ -6,7 +6,7 @@
 
 function loadStories() {
 	require('../../components/WButton/WButton.stories')
-	require('../../components/Icon/Icon.stories')
+	require('../../components/WIcon/WIcon.stories')
 	require('../../components/Layout/ScreenView/ScreenView.stories')
 	require('../../components/WLinearGradient/WLinearGradient.stories')
 	require('../../components/Loading/Loading.stories')
@@ -16,7 +16,7 @@ function loadStories() {
 
 const stories = [
 	'../../components/WButton/WButton.stories',
-	'../../components/Icon/Icon.stories',
+	'../../components/WIcon/WIcon.stories',
 	'../../components/Layout/ScreenView/ScreenView.stories',
 	'../../components/WLinearGradient/WLinearGradient.stories',
 	'../../components/Loading/Loading.stories',

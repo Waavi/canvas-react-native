@@ -1,0 +1,349 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components/WIcon should have a "color" for each font family defined at Fonts catalog 1`] = `
+<View>
+  <View>
+    <WIcon
+      key="green"
+      size={20}
+    >
+      <Icon
+        allowFontScaling={false}
+        size={40}
+        style={
+          Array [
+            Object {
+              "color": "#222",
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 40,
+              },
+              Array [
+                Object {
+                  "color": "#222",
+                },
+                undefined,
+              ],
+              Object {
+                "fontFamily": "WelveIcons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 40,
+                },
+                Array [
+                  Object {
+                    "color": "#222",
+                  },
+                  undefined,
+                ],
+                Object {
+                  "fontFamily": "WelveIcons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+          />
+        </Text>
+      </Icon>
+    </WIcon>
+    <WIcon
+      key="dark"
+      size={20}
+    >
+      <Icon
+        allowFontScaling={false}
+        size={40}
+        style={
+          Array [
+            Object {
+              "color": "#222",
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 40,
+              },
+              Array [
+                Object {
+                  "color": "#222",
+                },
+                undefined,
+              ],
+              Object {
+                "fontFamily": "WelveIcons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 40,
+                },
+                Array [
+                  Object {
+                    "color": "#222",
+                  },
+                  undefined,
+                ],
+                Object {
+                  "fontFamily": "WelveIcons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+          />
+        </Text>
+      </Icon>
+    </WIcon>
+  </View>
+</View>
+`;
+
+exports[`Components/WIcon should have a "size" for each font family defined at Fonts catalog 1`] = `
+<View>
+  <View>
+    <WIcon
+      key="20"
+      size={20}
+    >
+      <Icon
+        allowFontScaling={false}
+        size={40}
+        style={
+          Array [
+            Object {
+              "color": "#222",
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 40,
+              },
+              Array [
+                Object {
+                  "color": "#222",
+                },
+                undefined,
+              ],
+              Object {
+                "fontFamily": "WelveIcons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 40,
+                },
+                Array [
+                  Object {
+                    "color": "#222",
+                  },
+                  undefined,
+                ],
+                Object {
+                  "fontFamily": "WelveIcons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+          />
+        </Text>
+      </Icon>
+    </WIcon>
+    <WIcon
+      key="22"
+      size={20}
+    >
+      <Icon
+        allowFontScaling={false}
+        size={40}
+        style={
+          Array [
+            Object {
+              "color": "#222",
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 40,
+              },
+              Array [
+                Object {
+                  "color": "#222",
+                },
+                undefined,
+              ],
+              Object {
+                "fontFamily": "WelveIcons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 40,
+                },
+                Array [
+                  Object {
+                    "color": "#222",
+                  },
+                  undefined,
+                ],
+                Object {
+                  "fontFamily": "WelveIcons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+          />
+        </Text>
+      </Icon>
+    </WIcon>
+    <WIcon
+      key="24"
+      size={20}
+    >
+      <Icon
+        allowFontScaling={false}
+        size={40}
+        style={
+          Array [
+            Object {
+              "color": "#222",
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 40,
+              },
+              Array [
+                Object {
+                  "color": "#222",
+                },
+                undefined,
+              ],
+              Object {
+                "fontFamily": "WelveIcons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 40,
+                },
+                Array [
+                  Object {
+                    "color": "#222",
+                  },
+                  undefined,
+                ],
+                Object {
+                  "fontFamily": "WelveIcons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+          />
+        </Text>
+      </Icon>
+    </WIcon>
+  </View>
+</View>
+`;
+
+exports[`Components/WIcon should set a base style 1`] = `
+Array [
+  Object {
+    "color": "#222",
+  },
+  undefined,
+]
+`;
