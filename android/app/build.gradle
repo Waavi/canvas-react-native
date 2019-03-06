@@ -140,6 +140,7 @@ android {
 }
 
 dependencies {
+    implementation project(':react-native-action-sheet')
     implementation project(':react-native-webview')
     implementation project(':react-native-languages')
     implementation project(':react-native-gesture-handler')

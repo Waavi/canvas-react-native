@@ -18,7 +18,8 @@
 		"jest": true,
 		"navigator": true,
 		"describe": true,
-		"it": true
+		"it": true,
+		"expect": true
 	},
 	"rules": {
 		"react/jsx-filename-extension": [

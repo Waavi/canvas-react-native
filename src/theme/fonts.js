@@ -8,15 +8,12 @@ const type = {
             by their PostScript Name)
         3. run "react-native link assets"
     */
-	thin: 'Montserrat-Thin',
-	extralight: 'Montserrat-ExtraLight',
-	light: 'Montserrat-Light',
-	regular: 'Montserrat-Regular',
-	medium: 'Montserrat-Medium',
-	semibold: 'Montserrat-SemiBold',
-	bold: 'Montserrat-Bold',
-	italic: 'Montserrat-Regular', // TODO: Falta por añadir al proyecto
-	varela: 'VarelaRound-Regular',
+	bold: 'Ubuntu-Bold',
+	italic: 'Ubuntu-Italic',
+	light: 'Ubuntu-Light',
+	medium: 'Ubuntu-Medium',
+	regular: 'Ubuntu-Regular',
+	semibold: 'Ubuntu-Medium',
 }
 
 const size = {
