@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 import { func } from 'prop-types'
 import { connect } from 'react-redux'
 import { AuthActions, NotificationsActions } from '#actions'
-import { ScreenView, WText, Button } from '@/components'
+import { ScreenView, WText, WButton } from '@/components'
 
 @connect(
 	null,
 	{
-		signin: AuthActions.signin,
+		signin: AuthActions.forceLogin,
 		showNotificationInfo: NotificationsActions.showNotificationInfo,
 	}
 )
@@ -31,7 +31,7 @@ export class SigninScreen extends Component {
 				<WText size={20} cls="medium center mb-s">
 					Signin
 				</WText>
-				<Button cls="" text="sign in!" onPress={this.handleSubmit} />
+				<WButton cls="" text="sign in!" onPress={this.handleSubmit} />
 			</ScreenView>
 		)
 	}
