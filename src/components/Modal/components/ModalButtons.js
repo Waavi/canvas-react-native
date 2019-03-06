@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from '#propTypes'
 import { Box } from '@/components/Layout/Box'
-import { Button } from '@/components/Button'
+import { WButton } from '@/components/WButton'
 
 export class ModalButtons extends Component {
 	static propTypes = {
@@ -46,12 +46,12 @@ export class ModalButtons extends Component {
 			const [btn1, btn2] = allButtons
 			return (
 				<Box cls="self-stretch row-center mt-s" style={{}}>
-					<Button
+					<WButton
 						cls={['flex-1 mr-5', btn2.variant || 'green']}
 						text={btn2.text}
 						onPress={() => this.handleActionAndDismiss(btn2.onPress)}
 					/>
-					<Button
+					<WButton
 						cls={['flex-1 ml-5', btn1.variant || 'green']}
 						text={btn1.text}
 						onPress={() => this.handleActionAndDismiss(btn1.onPress)}
@@ -63,7 +63,7 @@ export class ModalButtons extends Component {
 			return (
 				<Box cls="self-stretch mt-s px-2s">
 					{allButtons.map(({ text, onPress, variant = 'green' }, index) => (
-						<Button
+						<WButton
 							// eslint-disable-next-line react/no-array-index-key
 							key={index}
 							cls={['mb-10', variant]}

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from '#propTypes'
-import ReactNativeLinearGradient from 'react-native-linear-gradient'
+import RNLinearGradient from 'react-native-linear-gradient'
 import { Directions, Colors } from './utils'
 
 const DirectionsKeys = Object.keys(Directions)
@@ -9,6 +9,7 @@ WLinearGradient.propTypes = {
 	direction: PropTypes.oneOf([...DirectionsKeys, '']),
 	color: PropTypes.oneOf('primary', 'secondary', 'tertiary'),
 	colors: PropTypes.arrayOf(PropTypes.string),
+	style: PropTypes.style,
 	start: PropTypes.shape({
 		x: Number,
 		y: Number,
@@ -31,14 +32,15 @@ WLinearGradient.defaultProps = {
 	start: Directions.vertical.start,
 	end: Directions.vertical.end,
 	children: undefined,
+	style: undefined,
 }
 
-export function WLinearGradient({ direction, color, colors, start, end, children }) {
+export function WLinearGradient({ direction, color, colors, start, end, style, children }) {
 	const coords = direction ? Directions[direction] : { start, end }
 	const palette = color ? Colors[color] : colors
 	return (
-		<ReactNativeLinearGradient colors={palette} start={coords.start} end={coords.end}>
+		<RNLinearGradient colors={palette} start={coords.start} end={coords.end} style={style}>
 			{children}
-		</ReactNativeLinearGradient>
+		</RNLinearGradient>
 	)
 }

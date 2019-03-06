@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from '#propTypes'
 import { connect } from 'react-redux'
 import { AuthActions, NotificationsActions } from '#actions'
-import { ScreenView, Button } from '@/components'
+import { ScreenView, WButton } from '@/components'
 import { t } from '@/lang'
 
 @connect(
@@ -24,10 +24,10 @@ export class InboxScreen extends Component {
 		const { navigate } = navigation
 		return (
 			<ScreenView cls="flex-1 col-center space-around">
-				<Button text="Go to another screen" onPress={() => navigate('OtherScreen')} />
-				<Button text="signout" onPress={signout} />
+				<WButton text="Go to another screen" onPress={() => navigate('OtherScreen')} />
+				<WButton text="signout" onPress={signout} />
 
-				<Button
+				<WButton
 					text="test modal"
 					textAlign="center"
 					toUpper

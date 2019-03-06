@@ -5,7 +5,7 @@
 // https://github.com/elderfo/react-native-storybook-loader.git
 
 function loadStories() {
-	require('../../components/Button/Button.stories')
+	require('../../components/WButton/WButton.stories')
 	require('../../components/Icon/Icon.stories')
 	require('../../components/Layout/ScreenView/ScreenView.stories')
 	require('../../components/WLinearGradient/WLinearGradient.stories')
@@ -17,7 +17,7 @@ function loadStories() {
 }
 
 const stories = [
-	'../../components/Button/Button.stories',
+	'../../components/WButton/WButton.stories',
 	'../../components/Icon/Icon.stories',
 	'../../components/Layout/ScreenView/ScreenView.stories',
 	'../../components/WLinearGradient/WLinearGradient.stories',

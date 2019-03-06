@@ -510,7 +510,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E9DAF3A2227E1E3005AF049 /* libBVLinearGradient.a in Frameworks */,
+				3E5C8614222E64B000059F7D /* libBVLinearGradient.a in Frameworks */,
 				3E5190FB221EC2B400935FAA /* libRNLanguages.a in Frameworks */,
 				ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,

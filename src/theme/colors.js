@@ -13,7 +13,7 @@ const basics = {
 	white: '#FFF',
 	lightestgray: '#F4F6FA',
 	lightergray: '#EDF0F4',
-	lightgray: '#C8CED8',
+	lightgray: '#CDD2D6',
 	mediumgray: '#A3ADBA',
 	darkgray: '#5B6674',
 	darkergray: '#3A434F',
